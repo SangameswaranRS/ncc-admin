@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checkable="true"
+            android:id="@+id/register_cadet"
+            android:title="Register new cadets"
+            android:icon="@drawable/register_cadet_icon"/>
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/create_new_admin_icon"
+            android:title="Create new admin"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/grant_revoke_permission"
+            android:title="Grant/Revoke Permissions"
+            />
+        <item
+            android:checkable="true"
+            android:id="@+id/pchange"
+            android:title="View permission changes"
+            android:icon="@drawable/permission_change_fragment_icon"/>
+        <item
+            android:checkable="true"
+            android:id="@+id/viewCadetsDetail"
+            android:title="View Cadets details"
+            android:icon="@drawable/view_cadets_icon"/>
+        <item
+            android:checkable="true"
+            android:id="@+id/attendance"
+            android:title="Mark attendance"
+            android:icon="@drawable/mark_attendance_icon" />
+        <item
+            android:icon="@drawable/view_attendance_report"
+            android:id="@+id/viewAttendanceReport"
+            android:title="View Attendance reports"
+            android:checkable="true"/>
+    </group>
+    <item android:title="Ideate your thoughts">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share your thoughts"
+                android:checkable="true"/>
+        </menu>
+    </item>
+</menu>

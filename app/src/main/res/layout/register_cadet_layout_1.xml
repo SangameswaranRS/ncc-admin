@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvJustDisplayOfficialDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:lineSpacingExtra="8sp"
+                android:text="Official Details"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etRegisterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvJustDisplayOfficialDetails"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="Enter name here"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etRegisterRegimentalNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Enter Your Regimental number"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etRank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterRegimentalNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Enter your rank"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etPlatoon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRank"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="Enter your platoon"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:id="@+id/etPassoutYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPlatoon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter the passout Year"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/etDateOfEnrollment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPassoutYear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter the date of enrollment"
+                android:inputType="none" />
+            <EditText
+                android:id="@+id/etDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDateOfEnrollment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter the date of birth"
+                android:inputType="none" />
+
+            <EditText
+                android:id="@+id/etContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDateOfBirth"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter your contact number"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/etContactMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etContactNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter your email address"
+                android:inputType="textEmailAddress"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

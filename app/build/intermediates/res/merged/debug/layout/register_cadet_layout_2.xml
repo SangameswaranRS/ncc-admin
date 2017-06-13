@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvJustDisplayPersonalDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:lineSpacingExtra="8sp"
+                android:text="Personal Details"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etRegisterCollegeRollNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvJustDisplayPersonalDetails"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="Enter College Roll number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etRegisterFathersName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterCollegeRollNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Enter Your father's name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etRegisterMotherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterFathersName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Enter Mother's name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etRegisterAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterMotherName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="Enter your Address"
+                android:inputType="textPostalAddress" />
+
+
+            <EditText
+                android:id="@+id/etRegisterMessPreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter your mess preference"
+                android:inputType="textAutoComplete" />
+
+
+            <EditText
+                android:id="@+id/etBankAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterMessPreference"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter Bank Account Number"
+                android:inputType="textLongMessage"
+                />
+            <EditText
+                android:id="@+id/etIFSCCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etBankAccountNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter the IFSC Code"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etRegisterDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etIFSCCode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter your Department"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/etBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRegisterDepartment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter your Blood Group"
+                android:inputType="textEmailAddress"
+                />
+            <EditText
+                android:id="@+id/etWillingnessToDonate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etBloodGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Are you willing to donate blood"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/etFatherOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etWillingnessToDonate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter your Fathers Occupation"
+                android:inputType="textLongMessage"
+                />
+            <EditText
+                android:id="@+id/etMothersOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFatherOccupation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter your Fathers Occupation"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/etAnnualIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etMothersOccupation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="Enter Annual Income of parents(For Scholarship purposes)"
+                android:inputType="number"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnFinish"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

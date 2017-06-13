@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "919420402181",
+    "firebase_url": "https://nccarmy-3d81c.firebaseio.com",
+    "project_id": "nccarmy-3d81c",
+    "storage_bucket": "nccarmy-3d81c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919420402181:android:fd277c3ffad871c5",
+        "android_client_info": {
+          "package_name": "com.example.sangameswaran.nccarmy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919420402181-8uuoan5fm5e1q6mc3uc10mmqo9se2qjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sangameswaran.nccarmy",
+            "certificate_hash": "31117f0f16d112656a5adee4f65a7b0d1b688322"
+          }
+        },
+        {
+          "client_id": "919420402181-mdddk1qo61bquqkhrggskh3r97po0vc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI7ODO7m5fwiClRm46gjeUaUdnznlZ0Ww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919420402181-mdddk1qo61bquqkhrggskh3r97po0vc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

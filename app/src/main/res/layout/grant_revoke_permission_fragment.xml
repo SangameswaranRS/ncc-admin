@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrapp1"
+        android:layout_marginTop="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etRevokeUserID"
+            android:hint="Enter targetUser Id"
+             />
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgSelectorRadio"
+        android:layout_below="@+id/wrapp1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbGrant"
+            android:text="Grant permissions"
+            />
+        <RadioButton
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbRevoke"
+            android:text="Revoke Permissions"
+            android:checked="true"
+            />
+    </RadioGroup>
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrapp2"
+        android:layout_below="@+id/rgSelectorRadio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etReason"
+            android:hint="Enter the reason for granting/revoking permissions"
+            />
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    <TextView
+        android:text="      Grant/Revoke      "
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_back"
+        android:height="35dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/tvRevokeButton"
+        android:layout_below="@+id/wrapp2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Note that  your response will be recorded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/textView3" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+
+
+    <TextView
+        android:text="Copyright@NCC Army Anna University"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:text="         Login         "
+        android:textSize="25dp"
+        android:height="35dp"
+        android:background="@drawable/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/tvLoginButton"
+        android:layout_above="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="sans-serif"
+        android:typeface="serif" />
+
+    <TextView
+        android:text="admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/tvIntoText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:text="NCC Army"
+        android:textSize="45dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:id="@+id/tvIntoText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textAllCaps="false" />
+
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et1"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Enter your User Name"
+            android:id="@+id/etLoginUserName"
+            />
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/et2"
+        android:layout_below="@+id/et1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/etLoginPassword"
+            />
+
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+</RelativeLayout>
