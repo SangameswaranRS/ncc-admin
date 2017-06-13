@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     app:cardElevation="5dp"
     app:cardCornerRadius="2dp"
-    app:contentPadding="5dp"
+    app:contentPadding="0dp"
     android:layout_marginTop="6dp">
 
 <LinearLayout
@@ -18,7 +18,8 @@
         android:layout_height="2dp"
         android:orientation="vertical"
         android:background="@color/colorAccent"
-        android:id="@+id/cardColor"></LinearLayout>
+        android:id="@+id/cardColor">
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

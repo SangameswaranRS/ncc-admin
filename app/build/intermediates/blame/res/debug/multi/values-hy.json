@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "E:\\NCCArmy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 209,
+                    "endOffset": 310
+                },
+                "from": {
+                    "file": "C:\\Users\\Sangameswaran\\.android\\build-cache\\475c9e3b6e96f4983dc2aa0cfa8c5264d2e955c4\\output\\res\\values-hy\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 209,
+                        "endOffset": 494
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
         "map": [
             {

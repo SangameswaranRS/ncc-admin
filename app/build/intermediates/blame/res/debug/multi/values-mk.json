@@ -24,6 +24,30 @@
         ]
     },
     {
+        "outputFile": "E:\\NCCArmy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 195,
+                    "endOffset": 296
+                },
+                "from": {
+                    "file": "C:\\Users\\Sangameswaran\\.android\\build-cache\\475c9e3b6e96f4983dc2aa0cfa8c5264d2e955c4\\output\\res\\values-mk\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 195,
+                        "endOffset": 480
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
         "map": [
             {

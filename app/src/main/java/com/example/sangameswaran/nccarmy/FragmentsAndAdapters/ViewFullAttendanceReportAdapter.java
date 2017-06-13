@@ -36,9 +36,10 @@ public class ViewFullAttendanceReportAdapter extends RecyclerView.Adapter<ViewFu
     @Override
     public void onBindViewHolder(ViewFullAttendancereportRecyclerViewHolder holder, int position) {
         ParadeEntity bindEntity=ParadeEntities.get(position);
-        holder.t1.setText(bindEntity.getCadet().getName());
-        holder.t2.setText(bindEntity.getCadet().getRegimental_number());
-        holder.t3.setText(bindEntity.getCadet().getPlatoon());
+        holder.t1.setText("NAME : "+bindEntity.getCadet().getName());
+        holder.t1.setTextColor(Color.BLACK);
+        holder.t2.setText("REGIMENTAL NUMBER : "+bindEntity.getCadet().getRegimental_number());
+        holder.t3.setText("PLATOON : "+bindEntity.getCadet().getPlatoon());
         if(bindEntity.getAttendance().equals("present")||bindEntity.getAttendance().equals("Present")){
             holder.cardColor.setBackgroundColor(Color.parseColor("#309229"));
         }

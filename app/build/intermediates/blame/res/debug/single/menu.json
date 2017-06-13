@@ -8,6 +8,14 @@
         "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
         "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
         "source": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
     },

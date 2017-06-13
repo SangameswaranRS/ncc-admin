@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
-        "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
     },
     {
-        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
+        "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
     },
     {
         "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
@@ -18,6 +18,46 @@
     {
         "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
         "source": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Prabhu Sivanandam\\.android\\build-cache\\e3b81ef69fc7ade0f2c3f774cfb3c14e9c604ca0\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
+        "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
     },
     {
         "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
@@ -40,16 +80,16 @@
         "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
     },
     {
-        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+        "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
+        "source": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
     },
     {
         "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
         "source": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
     },
     {
-        "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
-        "source": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
     },
     {
         "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
@@ -60,15 +100,11 @@
         "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
     },
     {
-        "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Prabhu Sivanandam\\.android\\build-cache\\e3b81ef69fc7ade0f2c3f774cfb3c14e9c604ca0\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
         "source": "C:\\Users\\Prabhu Sivanandam\\.android\\build-cache\\e3b81ef69fc7ade0f2c3f774cfb3c14e9c604ca0\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
-        "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     }
 ]

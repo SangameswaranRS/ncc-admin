@@ -6,5 +6,9 @@
     {
         "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }
 ]
