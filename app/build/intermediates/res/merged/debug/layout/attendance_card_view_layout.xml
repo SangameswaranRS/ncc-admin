@@ -6,6 +6,8 @@
     android:id="@+id/cardviewd"
     app:cardElevation="15dp"
     app:cardCornerRadius="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
     android:layout_margin="5dp"
     app:contentPadding="0dp">
     <LinearLayout

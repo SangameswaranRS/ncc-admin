@@ -49,6 +49,7 @@ public class ViewFullAttendanceReportAdapter extends RecyclerView.Adapter<ViewFu
     public int getItemCount() {
         return ParadeEntities.size();
     }
+
     public class ViewFullAttendancereportRecyclerViewHolder extends RecyclerView.ViewHolder {
         TextView t1,t2,t3;
         LinearLayout cardColor;
