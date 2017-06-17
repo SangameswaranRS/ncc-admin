@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.sangameswaran.nccarmy.Entities.ParadeEntity;
@@ -33,15 +34,18 @@ public class ViewFullReportAttendanceActivity extends AppCompatActivity {
     RecyclerView.LayoutManager manager;
     ViewFullAttendanceReportAdapter adapter;
     RelativeLayout loader5;
+    TextView batchDate;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_full_report_attendance_activity);
+        batchDate=(TextView)findViewById(R.id.tvBatchDate);
         CompleteAttendanceRecyclerView=(RecyclerView)findViewById(R.id.viewFullReportRv);
         loader5=(RelativeLayout)findViewById(R.id.loader5);
         getValuesViaIntent();
         manager=new LinearLayoutManager(this);
         DatabaseReference AttendApi= FirebaseDatabase.getInstance().getReference("PARADE/"+HIT_DIR);
+        batchDate.setText(HIT_DIR);
         AttendApi.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -81,4 +85,7 @@ public class ViewFullReportAttendanceActivity extends AppCompatActivity {
         HIT_DIR=intent.getStringExtra("hit_directory");
     }
 
+    public void backPressed(View view) {
+        super.onBackPressed();
+    }
 }
