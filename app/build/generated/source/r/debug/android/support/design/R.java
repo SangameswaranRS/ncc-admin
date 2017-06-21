@@ -646,7 +646,7 @@ public final class R {
         public static final int design_ic_visibility = 0x7f020056;
         public static final int design_snackbar_background = 0x7f020057;
         public static final int navigation_empty_icon = 0x7f020062;
-        public static final int notification_template_icon_bg = 0x7f020068;
+        public static final int notification_template_icon_bg = 0x7f020069;
     }
     public static final class id {
         public static final int action0 = 0x7f0c00a5;

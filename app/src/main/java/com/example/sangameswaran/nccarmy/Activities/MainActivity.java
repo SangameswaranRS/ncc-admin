@@ -18,6 +18,7 @@ import com.example.sangameswaran.nccarmy.Entities.AdminEntity;
 import com.example.sangameswaran.nccarmy.Entities.CadetEntity;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.GrantRevokePermissionFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.MarkAttendanceFragment;
+import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.UnAuthFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewCadetsDetailFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewParadeOverallReportFragment;
 import com.example.sangameswaran.nccarmy.R;
@@ -28,11 +29,13 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.gson.Gson;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public CadetEntity register=new CadetEntity();
+    private AdminEntity adminEntity=new AdminEntity();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,15 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        Gson gs=new Gson();
+        try {
+            SharedPreferences sp=getSharedPreferences("userDetails",MODE_PRIVATE);
+            String jsonString=sp.getString("user","throwRuntimeException");
+            adminEntity=gs.fromJson(jsonString,AdminEntity.class);
+        }catch (Exception e){
+            Toast.makeText(getApplicationContext(),"Cast Exception",Toast.LENGTH_LONG).show();
+            finishAffinity();
+        }
         CreateNewAdminFragment fragment=new CreateNewAdminFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
     }
@@ -92,41 +104,70 @@ public class MainActivity extends AppCompatActivity
 
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
-            CreateNewAdminFragment fragment=new CreateNewAdminFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            if(adminEntity.getIsAdmin().equals("1")) {
+                CreateNewAdminFragment fragment = new CreateNewAdminFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            }else {
+                UnAuthFragment fragment=new UnAuthFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
 
         } else if (id == R.id.nav_gallery) {
-            GrantRevokePermissionFragment fragment=new GrantRevokePermissionFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
-
+            if(adminEntity.getIsAdmin().equals("1")) {
+                GrantRevokePermissionFragment fragment = new GrantRevokePermissionFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            }else {
+                UnAuthFragment fragment=new UnAuthFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
         }
         else if (id == R.id.register_cadet) {
-
-            RegisterCadetFragment cadetFragment=new RegisterCadetFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,cadetFragment).commit();
-
+            if(adminEntity.getIsAdmin().equals("1")) {
+                RegisterCadetFragment cadetFragment = new RegisterCadetFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main, cadetFragment).commit();
+            }else {
+                UnAuthFragment fragment=new UnAuthFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
         }
         else if (id==R.id.pchange)
-        {
-            ViewPermissionChangesFragment fr=new ViewPermissionChangesFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fr).commit();
+        {   if (adminEntity.getIsSuperAdmin().equals("1")) {
+            ViewPermissionChangesFragment fr = new ViewPermissionChangesFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fr).commit();
+        }else {
+            UnAuthFragment fragment=new UnAuthFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+        }
         }
         else if (id==R.id.viewCadetsDetail)
         {
+            if (adminEntity.getIsSuperAdmin().equals("1")){
             ViewCadetsDetailFragment fragment=new ViewCadetsDetailFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+        }else {
+                UnAuthFragment fragment=new UnAuthFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
         }
 
         else if (id==R.id.attendance)
-        {
-            MarkAttendanceFragment fragment=new MarkAttendanceFragment();
+        {   if(adminEntity.getIsAdmin().equals("1")) {
+            MarkAttendanceFragment fragment = new MarkAttendanceFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+        }else {
+            UnAuthFragment fragment=new UnAuthFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+        }
         }
         else if (id==R.id.viewAttendanceReport)
         {
-            ViewParadeOverallReportFragment fragment=new ViewParadeOverallReportFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            if (adminEntity.getIsSuperAdmin().equals("1")) {
+                ViewParadeOverallReportFragment fragment = new ViewParadeOverallReportFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            }else {
+                UnAuthFragment fragment=new UnAuthFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

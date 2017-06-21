@@ -76,7 +76,9 @@ public class CreateNewAdminFragment extends Fragment {
                 {
                    final DatabaseReference adminSignup;
                    final AdminEntity adminEntity=new AdminEntity(Reg,pw,User,sq,sa,"0","0");
-
+                    adminEntity.setIsAdmin("0");
+                    adminEntity.setIsCadet("1");
+                    adminEntity.setIsSuperAdmin("0");
                     adminSignup=FirebaseDatabase.getInstance().getReference("Admins/"+User);
                     adminSignup.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
@@ -85,7 +87,6 @@ public class CreateNewAdminFragment extends Fragment {
                             if (dataSnapshot.hasChildren())
                             {
                                 Toast.makeText(getActivity(),"Username taken,sorry",Toast.LENGTH_LONG).show();
-
                             }
                             else
                             {

@@ -7,6 +7,7 @@ com/google/firebase/FirebaseException.class
 android/support/v4/view/NestedScrollingParent.class
 android/support/v4/view/MenuCompat.class
 android/support/v4/media/session/MediaControllerCompat.class
+com/google/gson/JsonNull.class
 android/support/annotation/IdRes.class
 android/support/v4/view/ViewPager$4.class
 android/support/design/widget/Snackbar$2.class
@@ -138,6 +139,7 @@ android/support/design/widget/Snackbar$5.class
 com/google/android/gms/common/internal/zzan.class
 android/support/annotation/AnyRes.class
 android/support/v4/view/ViewCompat$BaseViewCompatImpl.class
+com/google/gson/annotations/JsonAdapter.class
 android/support/design/widget/Snackbar$Callback$DismissEvent.class
 android/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase.class
 android/support/design/R$styleable.class
@@ -300,6 +302,8 @@ android/support/v4/media/RatingCompat$1.class
 android/support/v4/view/ViewCompat$JBViewCompatImpl.class
 android/support/v7/view/menu/MenuAdapter.class
 android/support/v7/widget/RecyclerViewAccessibilityDelegate.class
+com/google/gson/reflect/TypeToken.class
+com/google/gson/annotations/SerializedName.class
 android/support/v4/media/MediaMetadataCompatApi21.class
 android/support/annotation/IntegerRes.class
 android/support/design/widget/TabLayout$Tab.class
@@ -345,6 +349,7 @@ android/support/v4/view/ViewCompat$ViewCompatImpl.class
 android/support/v7/app/AppCompatDelegateImplV23.class
 android/support/annotation/RequiresPermission.class
 android/support/design/widget/ValueAnimatorCompat$Creator.class
+com/google/gson/annotations/Until.class
 android/support/design/widget/HeaderBehavior.class
 android/support/v4/widget/EdgeEffectCompat.class
 android/support/v4/widget/MaterialProgressDrawable$Ring.class
@@ -402,6 +407,7 @@ android/support/v4/widget/MaterialProgressDrawable$1.class
 android/support/v7/app/ActionBar$DisplayOptions.class
 android/support/design/widget/ViewUtils.class
 android/support/v4/view/ViewPager$2.class
+com/google/gson/annotations/Since.class
 android/support/v4/media/RatingCompat.class
 android/support/design/widget/Snackbar$10.class
 android/support/v4/view/accessibility/AccessibilityNodeInfoCompat.class
@@ -447,6 +453,7 @@ android/support/v7/app/AppCompatDelegate$NightMode.class
 android/support/v4/app/ServiceCompat$BaseServiceCompatImpl.class
 android/support/v4/view/VelocityTrackerCompat.class
 android/support/v4/media/VolumeProviderCompat$1.class
+com/google/gson/annotations/Expose.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi24.class
 android/support/design/widget/SnackbarManager$Callback.class
 android/support/v4/view/GravityCompat.class

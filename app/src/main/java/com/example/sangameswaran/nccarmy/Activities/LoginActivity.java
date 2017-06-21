@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.gson.Gson;
 
 /**
  * Created by Sangameswaran on 10-05-2017.
@@ -80,6 +81,17 @@ public class LoginActivity extends AppCompatActivity{
                                             SharedPreferences.Editor editor=sp.edit();
                                             editor.putString("MyloginID",adminLogin.getUser_name());
                                             editor.commit();
+                                            SharedPreferences w=getSharedPreferences("userDetails",MODE_PRIVATE);
+                                            SharedPreferences.Editor editor1=w.edit();
+                                            try {
+                                                Gson gson=new Gson();
+                                                String json=gson.toJson(adminLogin,AdminEntity.class);
+                                                editor1.putString("user",json);
+                                                editor1.commit();
+                                            }catch (Exception e){
+                                                Toast.makeText(getApplicationContext(),"Server Error",Toast.LENGTH_LONG).show();
+                                                finish();
+                                            }
                                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                             startActivity(intent);
                                         }

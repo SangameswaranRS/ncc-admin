@@ -5,7 +5,41 @@ package com.example.sangameswaran.nccarmy.Entities;
  */
 
 public class AdminEntity {
-    String regimental_number,password,user_name,security_question,security_answer,login_flag,blocked_status;
+    String regimental_number;
+    String password;
+    String user_name;
+    String security_question;
+    String security_answer;
+    String login_flag;
+    String blocked_status;
+    String isAdmin;
+    String isCadet;
+
+    public String getIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(String isAdmin) {
+        this.isAdmin = isAdmin;
+    }
+
+    public String getIsCadet() {
+        return isCadet;
+    }
+
+    public void setIsCadet(String isCadet) {
+        this.isCadet = isCadet;
+    }
+
+    public String getIsSuperAdmin() {
+        return isSuperAdmin;
+    }
+
+    public void setIsSuperAdmin(String isSuperAdmin) {
+        this.isSuperAdmin = isSuperAdmin;
+    }
+
+    String isSuperAdmin;
 
 
     public  AdminEntity()
