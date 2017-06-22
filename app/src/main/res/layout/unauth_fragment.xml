@@ -34,7 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Contact DBA"
-        android:textColor="@color/green"
+        android:textColor="@color/white"
+        android:background="@color/green"
         android:layout_alignParentBottom="true"
         android:id="@+id/callBtn"/>
 

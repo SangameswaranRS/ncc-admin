@@ -1,5 +1,13 @@
 [
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\add_ic.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\add_ic.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\plus_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\plus_icon.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_name.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\ic_action_name.png"
     }

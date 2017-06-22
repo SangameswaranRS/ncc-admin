@@ -18,6 +18,7 @@ import com.example.sangameswaran.nccarmy.Entities.AdminEntity;
 import com.example.sangameswaran.nccarmy.Entities.CadetEntity;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.GrantRevokePermissionFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.MarkAttendanceFragment;
+import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ParadeTaskReportFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.UnAuthFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewCadetsDetailFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewParadeOverallReportFragment;
@@ -164,6 +165,15 @@ public class MainActivity extends AppCompatActivity
             if (adminEntity.getIsSuperAdmin().equals("1")) {
                 ViewParadeOverallReportFragment fragment = new ViewParadeOverallReportFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            }else {
+                UnAuthFragment fragment=new UnAuthFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
+        }
+        else if (id==R.id.paradeTask){
+            if(adminEntity.getIsAdmin().equals("1")){
+                ParadeTaskReportFragment fragment=new ParadeTaskReportFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
             }else {
                 UnAuthFragment fragment=new UnAuthFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();

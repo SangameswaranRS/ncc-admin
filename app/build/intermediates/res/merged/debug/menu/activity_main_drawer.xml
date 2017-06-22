@@ -36,7 +36,7 @@
                     android:icon="@drawable/view_cadets_icon"/>
             </menu>
         </item>
-        <item android:title="Attendance">
+        <item android:title="Attendance and parade">
             <menu>
                 <item
                     android:checkable="true"
@@ -47,6 +47,11 @@
                     android:icon="@drawable/view_attendance_report"
                     android:id="@+id/viewAttendanceReport"
                     android:title="View Attendance reports"
+                    android:checkable="true"/>
+                <item
+                    android:icon="@drawable/ic_menu_manage"
+                    android:id="@+id/paradeTask"
+                    android:title="Parade Task"
                     android:checkable="true"/>
             </menu>
         </item>
