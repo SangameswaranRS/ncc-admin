@@ -8,6 +8,10 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\add_ic.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\plus.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\plus.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\plus_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\plus_icon.png"
     }

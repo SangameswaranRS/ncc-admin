@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/loader2"
-        android:background="@color/white"
+        android:background="#ffff"
         android:visibility="gone">
         <ProgressBar
             android:id="@+id/progressBar3"

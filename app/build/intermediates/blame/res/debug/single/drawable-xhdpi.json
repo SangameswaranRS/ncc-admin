@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\plus.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\plus.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\add_ic.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\add_ic.png"
     },

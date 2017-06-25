@@ -2757,14 +2757,15 @@ containing a value of this type.
         public static final int mark_attendance_icon=0x7f020061;
         public static final int nav_drawer_background=0x7f020062;
         public static final int navigation_empty_icon=0x7f020063;
-        public static final int notification_template_icon_bg=0x7f02006b;
+        public static final int notification_template_icon_bg=0x7f02006c;
         public static final int permission_change_fragment_icon=0x7f020064;
-        public static final int plus_icon=0x7f020065;
-        public static final int register_cadet_icon=0x7f020066;
-        public static final int side_nav_bar=0x7f020067;
-        public static final int unauth=0x7f020068;
-        public static final int view_attendance_report=0x7f020069;
-        public static final int view_cadets_icon=0x7f02006a;
+        public static final int plus=0x7f020065;
+        public static final int plus_icon=0x7f020066;
+        public static final int register_cadet_icon=0x7f020067;
+        public static final int side_nav_bar=0x7f020068;
+        public static final int unauth=0x7f020069;
+        public static final int view_attendance_report=0x7f02006a;
+        public static final int view_cadets_icon=0x7f02006b;
     }
     public static final class id {
         public static final int Linear1=0x7f0c00fa;

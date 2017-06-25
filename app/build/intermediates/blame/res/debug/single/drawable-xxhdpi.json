@@ -8,6 +8,10 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xxhdpi\\plus_icon.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\plus.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xxhdpi\\plus.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_name.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_name.png"
     }

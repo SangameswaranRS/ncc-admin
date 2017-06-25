@@ -129,14 +129,24 @@ public class ParadeTaskReportFragment extends Fragment{
                 DatabaseReference postRequest=FirebaseDatabase.getInstance().getReference("TasksApi");
                 String id=postRequest.push().getKey();
                 ParadeTaskReportEntity e=new ParadeTaskReportEntity();
-                e.setParade((String) selectParade.getSelectedItem());
-                e.setCrewEff(crewEff.getText().toString());
-                e.setDrillTask(drill.getText().toString());
-                e.setTheoryTask(theory.getText().toString());
-                postRequest.child(id).setValue(e);
-                Toast.makeText(getActivity(),"Added successfully",Toast.LENGTH_LONG).show();
-                ParadeTaskReportFragment fragment=new ParadeTaskReportFragment();
-                getFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+                if(drill.getText().toString().equals("")||theory.getText().toString().equals("")||crewEff.getText().toString().equals("")){
+                 if(drill.getText().toString().equals(""))
+                     drill.setError("Required");
+                    if (theory.getText().toString().equals(""))
+                        theory.setError("Required");
+                    if(crewEff.getText().toString().equals(""))
+                        crewEff.setError("Required");
+                }
+                else {
+                    e.setParade((String) selectParade.getSelectedItem());
+                    e.setCrewEff(crewEff.getText().toString());
+                    e.setDrillTask(drill.getText().toString());
+                    e.setTheoryTask(theory.getText().toString());
+                    postRequest.child(id).setValue(e);
+                    Toast.makeText(getActivity(), "Added successfully", Toast.LENGTH_LONG).show();
+                    ParadeTaskReportFragment fragment = new ParadeTaskReportFragment();
+                    getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+                }
             }
         }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override

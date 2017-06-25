@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,19 +14,19 @@
         android:id="@+id/addFAB"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="29dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:src="@drawable/add_ic"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/plus"
         app:fabSize="normal"
-        app:elevation="10dp"
+        app:elevation="20dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fff"
+        android:background="#ffff"
         android:id="@+id/rlLoader"
         android:visibility="gone">
         <ProgressBar
@@ -40,7 +39,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Loading.."
+            android:text="Loading..."
             android:textAlignment="center"
             android:textColor="#ff00"
             android:layout_below="@+id/progressBar6"

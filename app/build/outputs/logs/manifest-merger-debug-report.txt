@@ -15,9 +15,9 @@ ADDED from E:\NCCArmy\app\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from E:\NCCArmy\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from E:\NCCArmy\app\src\main\AndroidManifest.xml:4:5-83
-MERGED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\83be4d0fd05059b39028b6ba4f7c74bf56b6876b\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a7bdf5fbba137942795ab0fd47efbe82f0f5c8d7\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from E:\NCCArmy\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.CALL_PHONE
@@ -32,13 +32,13 @@ MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\Sanga
 MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Sangameswaran\.android\build-cache\558bab3f9bd30385d6f30c123ce42739b03b8b53\output\AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:cardview-v7:24.2.1] C:\Users\Sangameswaran\.android\build-cache\d62cdf0dd959e8bbf564e45742b55ebeae3a1854\output\AndroidManifest.xml:22:5-20
 MERGED from [com.wrapp.floatlabelededittext:library:0.0.6] C:\Users\Sangameswaran\.android\build-cache\835d30a4776d1230f1eff92e52bc2233cdc93a36\output\AndroidManifest.xml:11:5-20
-MERGED from [com.google.firebase:firebase-core:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8f08fb30bd8dddb5530ca6d4c79d36ea2200769b\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\83be4d0fd05059b39028b6ba4f7c74bf56b6876b\output\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:28:5-50:19
-MERGED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\7bd5338a9b7209a0c1f2f57d011544d0ea95ec3e\output\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.0] C:\Users\Sangameswaran\.android\build-cache\f3d5fec33dad08e94915559cda2ac0804e8054b6\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\475c9e3b6e96f4983dc2aa0cfa8c5264d2e955c4\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.firebase:firebase-core:10.2.0] C:\Users\Sangameswaran\.android\build-cache\6ceda1d8aaf3c386ad41ca7428d563d3202ec44d\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a7bdf5fbba137942795ab0fd47efbe82f0f5c8d7\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a8a761313145ed1de34ac8134802aa190085624e\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] C:\Users\Sangameswaran\.android\build-cache\86083a5d205cd8a3d63417f90e3c92cd0c234cc7\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\6bd8cba12b54ba78fcffe60a09c89be4871baabf\output\AndroidManifest.xml:19:5-21:19
 MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Sangameswaran\.android\build-cache\07378e2aff338c1543efc165e4783d6946a6cdd4\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\Sangameswaran\.android\build-cache\b8946245e334d72e5abb3368ed43291e7de13787\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Sangameswaran\.android\build-cache\6a4dae3e00ddc2a411f73b88df5b25b905a230c7\output\AndroidManifest.xml:25:5-20
@@ -93,17 +93,17 @@ MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Sangameswaran\.an
 MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\Sangameswaran\.android\build-cache\d58c0aa8ce4d7d759a21b88f742b41d772f95268\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Sangameswaran\.android\build-cache\558bab3f9bd30385d6f30c123ce42739b03b8b53\output\AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:recyclerview-v7:24.2.1] C:\Users\Sangameswaran\.android\build-cache\471ee8631c08f215cb3419b9511ec5caeae4e808\output\AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-database:10.2.0] C:\Users\Sangameswaran\.android\build-cache\24eed27b5c008ac70da8ed1b9fddb6e8a4f6a2ba\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-database-connection:10.2.0] C:\Users\Sangameswaran\.android\build-cache\17ca995583da1af4b0f3462335f577fd803a3e53\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database:10.2.0] C:\Users\Sangameswaran\.android\build-cache\9f640014efdf27bc49f834deac57304cc5a7b4c5\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:10.2.0] C:\Users\Sangameswaran\.android\build-cache\7dda6541ecb59fabed7b70965bf8cb867663e694\output\AndroidManifest.xml:3:5-43
 MERGED from [com.android.support:cardview-v7:24.2.1] C:\Users\Sangameswaran\.android\build-cache\d62cdf0dd959e8bbf564e45742b55ebeae3a1854\output\AndroidManifest.xml:20:5-43
 MERGED from [com.wrapp.floatlabelededittext:library:0.0.6] C:\Users\Sangameswaran\.android\build-cache\835d30a4776d1230f1eff92e52bc2233cdc93a36\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-core:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8f08fb30bd8dddb5530ca6d4c79d36ea2200769b\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\83be4d0fd05059b39028b6ba4f7c74bf56b6876b\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\7bd5338a9b7209a0c1f2f57d011544d0ea95ec3e\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.0] C:\Users\Sangameswaran\.android\build-cache\f3d5fec33dad08e94915559cda2ac0804e8054b6\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\475c9e3b6e96f4983dc2aa0cfa8c5264d2e955c4\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-core:10.2.0] C:\Users\Sangameswaran\.android\build-cache\6ceda1d8aaf3c386ad41ca7428d563d3202ec44d\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a7bdf5fbba137942795ab0fd47efbe82f0f5c8d7\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a8a761313145ed1de34ac8134802aa190085624e\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] C:\Users\Sangameswaran\.android\build-cache\86083a5d205cd8a3d63417f90e3c92cd0c234cc7\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\6bd8cba12b54ba78fcffe60a09c89be4871baabf\output\AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Sangameswaran\.android\build-cache\07378e2aff338c1543efc165e4783d6946a6cdd4\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\Sangameswaran\.android\build-cache\b8946245e334d72e5abb3368ed43291e7de13787\output\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Sangameswaran\.android\build-cache\6a4dae3e00ddc2a411f73b88df5b25b905a230c7\output\AndroidManifest.xml:21:5-23:63
@@ -119,118 +119,118 @@ MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Sangameswaran\.
 		INJECTED from E:\NCCArmy\app\src\main\AndroidManifest.xml
 		INJECTED from E:\NCCArmy\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\83be4d0fd05059b39028b6ba4f7c74bf56b6876b\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:19:5-78
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a7bdf5fbba137942795ab0fd47efbe82f0f5c8d7\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:21:22-76
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\83be4d0fd05059b39028b6ba4f7c74bf56b6876b\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:21:5-67
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a7bdf5fbba137942795ab0fd47efbe82f0f5c8d7\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:22:22-65
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:22:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\83be4d0fd05059b39028b6ba4f7c74bf56b6876b\output\AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a7bdf5fbba137942795ab0fd47efbe82f0f5c8d7\output\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:27:162-184
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\83be4d0fd05059b39028b6ba4f7c74bf56b6876b\output\AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a7bdf5fbba137942795ab0fd47efbe82f0f5c8d7\output\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\8a5d527741962b5f44f29d6235ab6a2491835525\output\AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] C:\Users\Sangameswaran\.android\build-cache\5fd0177bd3a3298454698094b4c9faad3191255e\output\AndroidManifest.xml:32:16-87
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:22:5-81
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:22:22-79
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:22:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:30:9-36:20
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:30:9-36:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:31:13-35:29
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:31:13-35:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:32:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:33:17-85
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:33:17-85
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:33:25-83
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:33:25-83
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:34:17-60
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:34:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:34:27-58
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:34:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:40:9-119
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:40:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:40:93-117
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:40:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:40:19-92
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:40:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:44:9-48:19
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:44:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:44:83-106
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:44:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:44:18-82
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:44:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:45:13-47:29
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:45:13-47:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:45:28-51
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:45:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:46:17-79
+ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:46:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\0cca4311f278762840e3b97cd265f987044619dd\output\AndroidManifest.xml:46:25-77
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] C:\Users\Sangameswaran\.android\build-cache\dd36fe47da46968301c986b2516ece748cae0fc2\output\AndroidManifest.xml:46:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\7bd5338a9b7209a0c1f2f57d011544d0ea95ec3e\output\AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a8a761313145ed1de34ac8134802aa190085624e\output\AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\7bd5338a9b7209a0c1f2f57d011544d0ea95ec3e\output\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a8a761313145ed1de34ac8134802aa190085624e\output\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\7bd5338a9b7209a0c1f2f57d011544d0ea95ec3e\output\AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a8a761313145ed1de34ac8134802aa190085624e\output\AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\7bd5338a9b7209a0c1f2f57d011544d0ea95ec3e\output\AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a8a761313145ed1de34ac8134802aa190085624e\output\AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\7bd5338a9b7209a0c1f2f57d011544d0ea95ec3e\output\AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:10.2.0] C:\Users\Sangameswaran\.android\build-cache\a8a761313145ed1de34ac8134802aa190085624e\output\AndroidManifest.xml:6:79-143
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\475c9e3b6e96f4983dc2aa0cfa8c5264d2e955c4\output\AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\6bd8cba12b54ba78fcffe60a09c89be4871baabf\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\475c9e3b6e96f4983dc2aa0cfa8c5264d2e955c4\output\AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\6bd8cba12b54ba78fcffe60a09c89be4871baabf\output\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\475c9e3b6e96f4983dc2aa0cfa8c5264d2e955c4\output\AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:10.2.0] C:\Users\Sangameswaran\.android\build-cache\6bd8cba12b54ba78fcffe60a09c89be4871baabf\output\AndroidManifest.xml:20:20-65
