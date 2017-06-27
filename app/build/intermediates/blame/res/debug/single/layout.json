@@ -40,6 +40,10 @@
         "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\layout\\register_cadet_layout_2.xml"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dashboard_fragment_layout.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\dashboard_fragment_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
         "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\layout\\content_main.xml"
     },
@@ -140,12 +144,12 @@
         "source": "C:\\Users\\Prabhu Sivanandam\\.android\\build-cache\\e3b81ef69fc7ade0f2c3f774cfb3c14e9c604ca0\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_navigation_item_separator.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -248,12 +252,12 @@
         "source": "C:\\Users\\Sangameswaran\\Downloads\\ToOpen\\NCCArmy\\app\\src\\main\\res\\layout\\view_full_report_attendance_activity.xml"
     },
     {
-        "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\Prabhu Sivanandam\\.android\\build-cache\\e3b81ef69fc7ade0f2c3f774cfb3c14e9c604ca0\\output\\res\\layout\\notification_template_big_media_narrow.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\permission_recycler_view_card_layout.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\permission_recycler_view_card_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Prabhu Sivanandam\\Desktop\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Prabhu Sivanandam\\.android\\build-cache\\e3b81ef69fc7ade0f2c3f774cfb3c14e9c604ca0\\output\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",

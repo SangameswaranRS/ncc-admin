@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.CreateNewAdminFragment;
 import com.example.sangameswaran.nccarmy.Entities.AdminEntity;
 import com.example.sangameswaran.nccarmy.Entities.CadetEntity;
+import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.DashboardFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.GrantRevokePermissionFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.MarkAttendanceFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ParadeTaskReportFragment;
@@ -178,6 +179,10 @@ public class MainActivity extends AppCompatActivity
                 UnAuthFragment fragment=new UnAuthFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
             }
+        }
+        else if (id==R.id.nav_share){
+            DashboardFragment fragment=new DashboardFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

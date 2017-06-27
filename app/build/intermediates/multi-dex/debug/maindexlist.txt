@@ -155,7 +155,9 @@ android/support/v7/app/ActionBar.class
 android/support/v4/view/NestedScrollingChild.class
 android/support/v4/view/animation/LookupTableInterpolator.class
 android/support/v4/os/TraceCompat.class
+com/github/mikephil/charting/utils/Utils.class
 android/support/v7/widget/AdapterHelper$Callback.class
+com/github/mikephil/charting/data/LineDataSet.class
 com/google/android/gms/measurement/AppMeasurement.class
 com/google/firebase/database/ThrowOnExtraProperties.class
 android/support/v7/appcompat/R$styleable.class
@@ -217,6 +219,7 @@ android/support/v4/view/ViewCompat$LollipopViewCompatImpl$1.class
 android/support/annotation/CallSuper.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserServiceCallbackImpl.class
 android/support/annotation/DrawableRes.class
+com/github/mikephil/charting/data/BarEntry.class
 android/support/v4/media/MediaMetadataCompat$BitmapKey.class
 android/support/v4/util/MapCollections.class
 android/support/v4/graphics/drawable/DrawableCompat.class
@@ -254,11 +257,13 @@ android/support/v4/widget/CursorAdapter.class
 android/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorListener.class
 android/support/design/widget/ViewOffsetBehavior.class
 android/support/v7/widget/RecyclerView$RecyclerListener.class
+com/github/mikephil/charting/components/Legend.class
 android/support/v4/widget/SimpleCursorAdapter.class
 android/support/v4/view/ViewCompat$JbMr1ViewCompatImpl.class
 com/google/firebase/iid/zzc.class
 android/support/v7/app/AppCompatDelegateImplBase.class
 android/support/v7/view/menu/CascadingMenuPopup.class
+com/github/mikephil/charting/data/PieEntry.class
 android/support/v7/view/menu/MenuBuilder.class
 android/support/annotation/CheckResult.class
 android/support/v4/media/VolumeProviderCompat.class
@@ -339,6 +344,7 @@ android/support/v4/view/accessibility/AccessibilityEventCompat.class
 android/support/design/R$style.class
 android/support/v4/view/ViewCompatJB.class
 android/support/v7/widget/RecyclerView$ItemAnimatorRestoreListener.class
+com/github/mikephil/charting/data/RadarEntry.class
 android/support/design/widget/TabLayout$ViewPagerOnTabSelectedListener.class
 android/support/design/widget/AppBarLayout$OnOffsetChangedListener.class
 android/support/v7/app/ActionBar$NavigationMode.class
@@ -366,6 +372,7 @@ android/support/v4/media/session/PlaybackStateCompat$MediaKeyAction.class
 android/support/design/widget/TabLayout$TabView.class
 android/support/v4/internal/view/SupportMenuItem.class
 android/support/v4/os/BuildCompat.class
+com/github/mikephil/charting/interfaces/datasets/ILineDataSet.class
 android/support/v4/view/ViewPager$OnAdapterChangeListener.class
 android/support/v4/text/util/LinkifyCompat$LinkifyMask.class
 android/support/v4/media/MediaMetadataCompat$LongKey.class
@@ -392,6 +399,7 @@ android/support/v4/media/MediaBrowserCompatApi21$MediaItem.class
 android/support/design/widget/TabLayout$PagerAdapterObserver.class
 com/google/firebase/database/PropertyName.class
 android/support/v4/view/ViewConfigurationCompat.class
+com/github/mikephil/charting/data/CombinedData.class
 android/support/v4/view/ViewCompatICSMr1.class
 android/support/design/widget/CoordinatorLayout$ViewElevationComparator.class
 android/support/v4/view/ViewCompat$FocusDirection.class
@@ -418,6 +426,7 @@ android/support/design/widget/CoordinatorLayout$OnPreDrawListener.class
 android/support/v4/app/NotificationCompat$Builder.class
 android/support/annotation/IntRange.class
 android/support/v4/content/PermissionChecker.class
+com/github/mikephil/charting/charts/PieChart.class
 android/support/v7/widget/ViewUtils.class
 android/support/v7/app/AppCompatDelegateImplV11.class
 android/support/design/widget/FloatingActionButton$ShadowDelegateImpl.class
@@ -433,6 +442,9 @@ android/support/design/widget/BottomSheetBehavior$State.class
 android/support/multidex/ZipUtil.class
 android/support/annotation/FractionRes.class
 android/support/annotation/PluralsRes.class
+com/github/mikephil/charting/components/YAxis.class
+com/github/mikephil/charting/components/AxisBase.class
+com/github/mikephil/charting/charts/Chart.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImpl.class
 android/support/v4/widget/SwipeRefreshLayout.class
 android/support/v4/media/session/PlaybackStateCompatApi22.class
@@ -455,6 +467,7 @@ android/support/v4/view/VelocityTrackerCompat.class
 android/support/v4/media/VolumeProviderCompat$1.class
 com/google/gson/annotations/Expose.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi24.class
+com/github/mikephil/charting/components/Legend$LegendPosition.class
 android/support/design/widget/SnackbarManager$Callback.class
 android/support/v4/view/GravityCompat.class
 android/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener.class
