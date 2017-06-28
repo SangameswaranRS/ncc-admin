@@ -142,9 +142,9 @@ public class DashboardFragment extends Fragment {
                                           s.setColors(col);
                                           PieData d=new PieData(s);
                                           induividualAttendance.setData(d);
-                                          dbtvAttendance.setText("ATTENDANCE : "+ent.getPercentage_of_present());
-                                          dbtvTotalHC.setText("TOTAL HEAD COUNT : "+ent.getOverall_present_count());
-                                          dbtvParadeName.setText("PARADE NAME : "+allDates[(int)(e.getX())]);
+                                          dbtvAttendance.setText(ent.getPercentage_of_present());
+                                          dbtvTotalHC.setText(ent.getOverall_present_count());
+                                          dbtvParadeName.setText(allDates[(int)(e.getX())]);
                                           Legend l=induividualAttendance.getLegend();
                                           l.setEnabled(false);
                                           induividualAttendance.invalidate();
@@ -166,6 +166,50 @@ public class DashboardFragment extends Fragment {
                         @Override
                         public void onNothingSelected() {
                             //inflate allDates[0] view.
+                            DatabaseReference getParadeDetailsApi=FirebaseDatabase.getInstance().getReference("PARADE_REPORT/"+allDates[0]);
+                            getParadeDetailsApi.addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                    if(dataSnapshot.hasChildren()){
+                                        try{
+                                            AttendanceReportEntity ent=dataSnapshot.getValue(AttendanceReportEntity.class);
+                                            int emePresent=Integer.parseInt(ent.getEMEpresentCount());
+                                            int engPresent=Integer.parseInt(ent.getENGpresentCount());
+                                            int sigPresent=Integer.parseInt(ent.getSIGpresentCount());
+                                            float eme=((float) ((float)emePresent/(emePresent+engPresent+sigPresent)))*100;
+                                            float eng=((float) ((float)engPresent/(emePresent+engPresent+sigPresent)))*100;
+                                            float sig=((float) ((float)sigPresent/(emePresent+engPresent+sigPresent)))*100;
+                                            List<PieEntry> pieEntry=new ArrayList<PieEntry>();
+                                            pieEntry.add(new PieEntry(eme,"EME"));
+                                            pieEntry.add(new PieEntry(eng,"ENGINEERS"));
+                                            pieEntry.add(new PieEntry(sig,"SIGNALS"));
+                                            PieDataSet s=new PieDataSet(pieEntry,"PRESENT PERCENT");
+                                            List<Integer> col=new ArrayList<Integer>();
+                                            col.add(Color.parseColor("#60a844"));
+                                            col.add(Color.parseColor("#dcdc39"));
+                                            col.add(Color.parseColor("#ff0000"));
+                                            s.setColors(col);
+                                            PieData d=new PieData(s);
+                                            induividualAttendance.setData(d);
+                                            dbtvAttendance.setText(ent.getPercentage_of_present());
+                                            dbtvTotalHC.setText(ent.getOverall_present_count());
+                                            dbtvParadeName.setText(allDates[0]);
+                                            Legend l=induividualAttendance.getLegend();
+                                            l.setEnabled(false);
+                                            induividualAttendance.invalidate();
+                                        }catch (Exception e){
+                                            Log.d("EXCEPTION",e.getMessage().toString());
+                                        }
+                                    }else {
+                                        Toast.makeText(getActivity(),"Selected parade details doesnot exist",Toast.LENGTH_LONG).show();
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
                         }
                     });
                     DashboardLoader.setVisibility(View.GONE);

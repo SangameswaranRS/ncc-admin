@@ -62,8 +62,13 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(getApplicationContext(),"Cast Exception",Toast.LENGTH_LONG).show();
             finishAffinity();
         }
-        CreateNewAdminFragment fragment=new CreateNewAdminFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+        if(adminEntity.getIsSuperAdmin().equals("1")){
+            DashboardFragment fragment=new DashboardFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+        }else {
+            UnAuthFragment fragment=new UnAuthFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+        }
     }
 
     @Override
@@ -71,6 +76,7 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             changeLoginFlag("0");
+            killSession(adminEntity.getUser_name());
             finishAffinity();
 
         } else {
@@ -78,6 +84,11 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(getApplicationContext(),"Press back oncemore to exit app",Toast.LENGTH_LONG).show();
 
         }
+    }
+
+    private void killSession(String user_name) {
+        DatabaseReference killSession=FirebaseDatabase.getInstance().getReference("ACTIVE_SESSION");
+        killSession.child(user_name).setValue(null);
     }
 
     @Override
@@ -181,8 +192,15 @@ public class MainActivity extends AppCompatActivity
             }
         }
         else if (id==R.id.nav_share){
-            DashboardFragment fragment=new DashboardFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+        }
+        else if (id==R.id.dashboard){
+            if(adminEntity.getIsSuperAdmin().equals("1")){
+                DashboardFragment fragment=new DashboardFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }else {
+                UnAuthFragment fragment=new UnAuthFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -6,9 +6,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,16 +30,16 @@ import com.google.gson.Gson;
 public class LoginActivity extends AppCompatActivity{
     EditText etLoginUserName,etLoginPassword;
     TextView tvLoginButton;
-    ProgressDialog loginProgress;
-
-
+    LinearLayout progressLL,ContainerLL;
+    TextView loaderMessage;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
-
-        loginProgress=new ProgressDialog(this);
+        progressLL=(LinearLayout)findViewById(R.id.progressLL);
+        ContainerLL=(LinearLayout)findViewById(R.id.containerll);
         etLoginUserName=(EditText)findViewById(R.id.etLoginUserName);
+        loaderMessage=(TextView)findViewById(R.id.tvLoginLoaderMessage);
         etLoginPassword=(EditText)findViewById(R.id.etLoginPassword);
         tvLoginButton=(TextView)findViewById(R.id.tvLoginButton);
         tvLoginButton.setOnClickListener(new View.OnClickListener() {
@@ -51,13 +53,12 @@ public class LoginActivity extends AppCompatActivity{
                 {}
                 else
                 {
-                    loginProgress.setCancelable(false);
-                    loginProgress.setTitle("Authorizing..");
-                    loginProgress.setMessage("Please wait...");
-                    loginProgress.show();
+                    ContainerLL.setVisibility(View.GONE);
+                    progressLL.setVisibility(View.VISIBLE);
+                    tvLoginButton.setVisibility(View.GONE);
+                    loaderMessage.setText("Checking your credentials..");
                     final String username=etLoginUserName.getText().toString();
                     final String password=etLoginPassword.getText().toString();
-                    //go to directory of specified username
                     DatabaseReference mdatabase= FirebaseDatabase.getInstance().getReference("Admins/"+username);
                     mdatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
@@ -69,14 +70,12 @@ public class LoginActivity extends AppCompatActivity{
                                 Log.d("Tag",""+dataSnapshot.toString());
                                 AdminEntity adminLogin=new AdminEntity();
                                 adminLogin=dataSnapshot.getValue(AdminEntity.class);
-                                loginProgress.dismiss();
                                 if(password.equals(adminLogin.getPassword()))
                                 {
                                     if(adminLogin.getLogin_flag().equals("0"))
                                     {
                                         if(adminLogin.getBlocked_status().equals("0")) {
                                             Toast.makeText(getApplicationContext(), "Authorization Success", Toast.LENGTH_LONG).show();
-                                            //call the intent to main activity
                                             SharedPreferences sp=getSharedPreferences("LoginCredentials",MODE_PRIVATE);
                                             SharedPreferences.Editor editor=sp.edit();
                                             editor.putString("MyloginID",adminLogin.getUser_name());
@@ -92,27 +91,40 @@ public class LoginActivity extends AppCompatActivity{
                                                 Toast.makeText(getApplicationContext(),"Server Error",Toast.LENGTH_LONG).show();
                                                 finish();
                                             }
+                                            createSession(adminLogin.getUser_name());
                                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                             startActivity(intent);
                                         }
                                         else
                                         {
+                                            progressLL.setVisibility(View.GONE);
                                             Toast.makeText(getApplicationContext(),"You are blocked,Sorry",Toast.LENGTH_LONG).show();
                                         }
                                     }
                                     else
                                     {
-                                        Toast.makeText(getApplicationContext(),"Login From Multiple Devices is blocked",Toast.LENGTH_LONG).show();
+                                        if(adminLogin.getBlocked_status().equals("0")) {
+                                            loaderMessage.setText("Retreiving your last settings...");
+                                            checkSession(adminLogin.getUser_name());
+                                        }else {
+                                            progressLL.setVisibility(View.GONE);
+                                            Toast.makeText(getApplicationContext(),"You are blocked,Sorry",Toast.LENGTH_LONG).show();
+                                        }
                                     }
                                 }
                                 else
                                 {
+                                    ContainerLL.setVisibility(View.VISIBLE);
+                                    progressLL.setVisibility(View.GONE);
+                                    tvLoginButton.setVisibility(View.VISIBLE);
                                     Toast.makeText(getApplicationContext(),"Wrong password for "+username,Toast.LENGTH_LONG).show();
                                 }
                             }
                             else
                             {
-                                loginProgress.dismiss();
+                                ContainerLL.setVisibility(View.VISIBLE);
+                                progressLL.setVisibility(View.GONE);
+                                tvLoginButton.setVisibility(View.VISIBLE);
                                 Toast.makeText(getApplicationContext(),"User name doesnot exist",Toast.LENGTH_LONG).show();
                             }
                         }
@@ -123,11 +135,44 @@ public class LoginActivity extends AppCompatActivity{
                         }
                     });
 
-
                 }
             }
         });
 
 
+    }
+
+    private void checkSession(String user_name) {
+        DatabaseReference get=FirebaseDatabase.getInstance().getReference("ACTIVE_SESSION/"+user_name);
+        get.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                try{
+                String imei=dataSnapshot.getValue(String.class);
+                TelephonyManager tm= (TelephonyManager) LoginActivity.this.getSystemService(TELEPHONY_SERVICE);
+                String actualImei=tm.getDeviceId();
+                if(imei.equals(actualImei)){
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }else {
+                    ContainerLL.setVisibility(View.VISIBLE);
+                    progressLL.setVisibility(View.GONE);
+                    tvLoginButton.setVisibility(View.VISIBLE);
+                    Toast.makeText(getApplicationContext(),"Login From Multiple Devices is blocked",Toast.LENGTH_LONG).show();
+                }}catch (Exception e){}
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    private void createSession(String userName) {
+        DatabaseReference sessionApi=FirebaseDatabase.getInstance().getReference("ACTIVE_SESSION");
+        TelephonyManager telephonyManager= (TelephonyManager) this.getSystemService(TELEPHONY_SERVICE);
+        sessionApi.child(userName).setValue(telephonyManager.getDeviceId());
     }
 }
