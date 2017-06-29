@@ -4,6 +4,10 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\plus.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\date_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\date_icon.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\add_ic.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\add_ic.png"
     },
@@ -22,6 +26,14 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\count_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\count_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\time_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\time_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dress_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\dress_icon.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_name.png",

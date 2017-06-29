@@ -2,11 +2,257 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
     android:id="@+id/content_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.sangameswaran.nccarmy.Activities.MainActivity"
     tools:showIn="@layout/app_bar_main">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/DashboardLoader"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="2dp"
+                app:contentPadding="10dp"
+                android:visibility="visible">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rlDashboard"
+                    android:visibility="visible"
+                    android:layout_below="@+id/DashboardLoader"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="70dp"
+                        android:id="@+id/overallAttendanceChart">
+                    </com.github.mikephil.charting.charts.BarChart>
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_below="@+id/overallAttendanceChart"
+                        android:id="@+id/induividualParadeOverView">
+                    </com.github.mikephil.charting.charts.PieChart>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/introTv"
+                        android:layout_centerHorizontal="true"
+                        android:text="Attendance Overview"
+                        android:textSize="23dp"
+                        android:textAlignment="center"
+                        android:drawableLeft="@drawable/ic_menu_slideshow"
+                        android:textColor="#ff00"
+                        android:layout_marginTop="23dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parade name"
+                        android:maxLines="1"
+                        android:drawableLeft="@drawable/parade_icon"
+                        android:ellipsize="end"
+                        android:id="@+id/dbtvParadeName"
+                        android:layout_below="@+id/overallAttendanceChart"
+                        android:layout_toRightOf="@+id/induividualParadeOverView"
+                        android:layout_toEndOf="@+id/induividualParadeOverView"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attendance %"
+                        android:drawableLeft="@drawable/attendance_icon_drawable_left"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:id="@+id/dbtvAttendance"
+                        android:layout_below="@+id/dbtvParadeName"
+                        android:layout_toRightOf="@+id/induividualParadeOverView"
+                        android:layout_toEndOf="@+id/induividualParadeOverView"
+                        android:layout_marginTop="30dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dbtvTotalCount"
+                        android:text="Total head count"
+                        android:drawableLeft="@drawable/count_icon"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_alignBottom="@+id/induividualParadeOverView"
+                        android:layout_toRightOf="@+id/induividualParadeOverView"
+                        android:layout_toEndOf="@+id/induividualParadeOverView"
+                        android:layout_marginBottom="0dp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                app:contentPadding="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parade"
+                        android:textColor="#ff00"
+                        android:textSize="23dp"
+                        android:id="@+id/headerP"
+                        android:textAlignment="center"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@drawable/parade_icon"
+                        />
+                    <fragment
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:id="@+id/map"
+                        map:uiZoomControls="true"
+                        android:layout_below="@+id/headerP"
+                        android:layout_marginTop="15dp"
+                        tools:context=".MapsActivity"
+                        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+                    <Button
+                        android:id="@+id/btnAlterParade"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alter"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#60a844" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/viewRl"
+                        android:visibility="visible"
+                        android:layout_alignTop="@+id/map"
+                        android:layout_toRightOf="@+id/map"
+                        android:layout_toEndOf="@+id/map"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DC TextView"
+                            android:maxLines="1"
+                            android:drawableLeft="@drawable/dress_icon"
+                            android:id="@+id/tvdbDc"
+                            android:ellipsize="end" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:paddingTop="0dp"
+                            android:drawableLeft="@drawable/date_icon"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/tvdbDate"
+                            android:layout_below="@+id/tvdbDc"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvdbTime"
+                            android:drawableLeft="@drawable/time_icon"
+                            android:layout_below="@+id/tvdbDate"
+                            android:text="time"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dbtvSpecialInstructions"
+                            android:text="Spl instructions"
+                            android:layout_below="@+id/tvdbTime"
+                            android:layout_marginTop="10dp"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            />
+                    </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editRl"
+                    android:visibility="gone"
+                    android:layout_alignTop="@+id/map"
+                    android:layout_toRightOf="@+id/map"
+                    android:layout_toEndOf="@+id/map" >
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dcEdit"
+                        android:hint="Dress Code"
+                        android:drawableLeft="@drawable/dress_icon"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dateEdit"
+                        android:text="Select date"
+                        android:layout_below="@+id/dcEdit"
+                        android:paddingTop="10dp"
+                        android:drawableLeft="@drawable/date_icon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/timeEdit"
+                        android:text="Select time"
+                        android:layout_below="@+id/dateEdit"
+                        android:paddingTop="10dp"
+                        android:drawableLeft="@drawable/time_icon"
+                        />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/specialInstructionsEdit"
+                        android:hint="Special instructions"
+                        android:layout_below="@+id/timeEdit"
+                        />
+                </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/DashboardLoader"
+        android:visibility="visible"
+        android:background="@color/white">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressChart"/>
+        <TextView
+            android:textColor="#ff00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textAlignment="center"
+            android:layout_below="@+id/progressChart"/>
+    </RelativeLayout>
+
 
 </RelativeLayout>

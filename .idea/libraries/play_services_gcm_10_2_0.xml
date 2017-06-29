@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="play-services-gcm-10.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/2d2fd4ee2abb8214a703285e7a5d229d40f768cd/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/2d2fd4ee2abb8214a703285e7a5d229d40f768cd/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

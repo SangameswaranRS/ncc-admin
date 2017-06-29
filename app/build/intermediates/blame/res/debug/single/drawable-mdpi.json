@@ -1,7 +1,15 @@
 [
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\dress_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\dress_icon.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\attendance_icon_drawable_left.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\attendance_icon_drawable_left.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\date_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\date_icon.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_name.png",
@@ -26,5 +34,9 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\parade_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\parade_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\time_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\time_icon.png"
     }
 ]
