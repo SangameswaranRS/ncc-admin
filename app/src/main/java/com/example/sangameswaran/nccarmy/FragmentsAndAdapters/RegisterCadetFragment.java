@@ -7,12 +7,17 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.sangameswaran.nccarmy.Activities.MainActivity;
 import com.example.sangameswaran.nccarmy.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Sangameswaran on 11-05-2017.
@@ -20,7 +25,8 @@ import com.example.sangameswaran.nccarmy.R;
 
 public class RegisterCadetFragment extends Fragment {
 
-    EditText e1,e2,e3,e4,e5,e6,e7,e8,e9;
+    EditText e1,e2,e3,e5,e6,e7,e8,e9;
+    Spinner e4;
     Button btnNext;
     @Nullable
     @Override
@@ -29,12 +35,20 @@ public class RegisterCadetFragment extends Fragment {
         e1=(EditText)v.findViewById(R.id.etRegisterName);
         e2=(EditText)v.findViewById(R.id.etRegisterRegimentalNumber);
         e3=(EditText)v.findViewById(R.id.etRank);
-        e4=(EditText)v.findViewById(R.id.etPlatoon);
+        getActivity().setTitle("Register new cadets");
+        e4=(Spinner) v.findViewById(R.id.etPlatoon);
         e5=(EditText)v.findViewById(R.id.etPassoutYear);
         e6=(EditText)v.findViewById(R.id.etDateOfEnrollment);
         e7=(EditText)v.findViewById(R.id.etDateOfBirth);
         e8=(EditText)v.findViewById(R.id.etContactNumber);
         e9=(EditText)v.findViewById(R.id.etContactMail) ;
+        List<String> platoons=new ArrayList<>();
+        platoons.add("EME");
+        platoons.add("Engineers");
+        platoons.add("Signals");
+        ArrayAdapter<String> platoonAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item,platoons);
+        platoonAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        e4.setAdapter(platoonAdapter);
         btnNext=(Button)v.findViewById(R.id.btnNext);
 
         final MainActivity activity= (MainActivity) getActivity();
@@ -47,8 +61,6 @@ public class RegisterCadetFragment extends Fragment {
                     e2.setError("Regimental number Required");
                 if(e3.getText().toString().equals(""))
                     e3.setError("Rank Required");
-                if(e4.getText().toString().equals(""))
-                    e4.setError("Platoon Required");
                 if(e5.getText().toString().equals(""))
                     e5.setError("Passout year Required");
                 if(e6.getText().toString().equals(""))
@@ -63,7 +75,7 @@ public class RegisterCadetFragment extends Fragment {
                 s1=e1.getText().toString();
                 s2=e2.getText().toString();
                 s3=e3.getText().toString();
-                s4=e4.getText().toString();
+                s4=String.valueOf(e4.getSelectedItem());
                 s5=e5.getText().toString();
                 s6=e6.getText().toString();
                 s7=e7.getText().toString();
@@ -86,16 +98,10 @@ public class RegisterCadetFragment extends Fragment {
                     activity.register.setEmailid(s9);
                     Toast.makeText(getActivity(),"Complete Personal details to finish",Toast.LENGTH_LONG).show();
                     RegisterCadetFragment2 fragment=new RegisterCadetFragment2();
-                    //RegisterCadetFragment fragment1=new RegisterCadetFragment();
                     FragmentManager fragmentManager = getFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                     fragmentTransaction.replace(R.id.content_main,fragment).commit();
                 }
-
-
-
-
-
             }
         });
         return v;

@@ -39,7 +39,7 @@ public class ViewCadetsDetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.view_cadets_details_fragment,container,false);
-        //inflate the views
+        getActivity().setTitle("Cadet details");
         recyclerView =(RecyclerView) v.findViewById(R.id.recyclerViewCadets);
         manager=new LinearLayoutManager(getActivity());
         loader1=(RelativeLayout) v.findViewById(R.id.loader1) ;

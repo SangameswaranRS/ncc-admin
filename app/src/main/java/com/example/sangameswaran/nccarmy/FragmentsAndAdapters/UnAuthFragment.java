@@ -27,6 +27,7 @@ public class UnAuthFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.unauth_fragment,container,false);
         callBtn=(Button)v.findViewById(R.id.callBtn);
+        getActivity().setTitle("Unauthorized");
         builder=new AlertDialog.Builder(getActivity());
         callBtn.setOnClickListener(new View.OnClickListener() {
             @Override

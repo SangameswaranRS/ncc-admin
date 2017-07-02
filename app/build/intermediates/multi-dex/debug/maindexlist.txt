@@ -361,6 +361,7 @@ com/google/android/gms/internal/zzkm.class
 android/support/v4/media/MediaMetadataCompat.class
 com/google/android/gms/ads/internal/zzw.class
 com/google/android/gms/games/Game.class
+de/hdodenhof/circleimageview/CircleImageView.class
 android/support/v4/media/RatingCompat$1.class
 android/support/v4/view/ViewCompat$JBViewCompatImpl.class
 com/google/android/gms/internal/zzlp.class

@@ -32,7 +32,7 @@ public class CreateNewAdminFragment extends Fragment {
         View v=inflater.inflate(R.layout.create_new_admin_fragment,container,false);
         //initialize views
 
-
+        getActivity().setTitle("Create Admin");
         UserName = (EditText) v.findViewById(R.id.etSigninUserName);
         Regimenta_number=(EditText)v.findViewById(R.id.etSigninRegimentalNumber);
         Password=(EditText)v.findViewById(R.id.etSigninPassword);

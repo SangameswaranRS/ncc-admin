@@ -88,7 +88,9 @@ public class MainActivity extends AppCompatActivity
     TextView dateEdit,timeEdit;
     RelativeLayout viewRl,EditRl;
     GoogleMap map;
+    View headerView;
     private Button toggler;
+    TextView navHeaderUserName,navHeaderAccessLevel;
     private boolean alteringParade=false;
     double lat=0.0;
     double lon=0.0;
@@ -110,6 +112,7 @@ public class MainActivity extends AppCompatActivity
         tvdbTimeTextView=(TextView)findViewById(R.id.tvdbTime);
         dbtvSpecialInstructions=(TextView)findViewById(R.id.dbtvSpecialInstructions);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        headerView=navigationView.getHeaderView(0);
         toggler=(Button)findViewById(R.id.btnAlterParade);
         viewRl=(RelativeLayout)findViewById(R.id.viewRl);
         EditRl=(RelativeLayout)findViewById(R.id.editRl);
@@ -134,6 +137,15 @@ public class MainActivity extends AppCompatActivity
             UnAuthFragment fragment=new UnAuthFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
         }
+        navHeaderUserName=(TextView)headerView.findViewById(R.id.nav_header_user_name);
+        navHeaderAccessLevel=(TextView)headerView.findViewById(R.id.nav_header_access_level);
+        navHeaderUserName.setText(adminEntity.getUser_name());
+        if(adminEntity.getIsSuperAdmin().equals("1"))
+            navHeaderAccessLevel.setText("Super Admin");
+        else if (adminEntity.getIsAdmin().equals("1"))
+            navHeaderAccessLevel.setText("Admin");
+        else
+            navHeaderAccessLevel.setText("Cadet");
         rlDashboard= (RelativeLayout) findViewById(R.id.rlDashboard);
         DashboardLoader=(RelativeLayout)findViewById(R.id.DashboardLoader);
         induividualAttendance=(PieChart)findViewById(R.id.induividualParadeOverView);
@@ -267,6 +279,7 @@ public class MainActivity extends AppCompatActivity
                 if(!alteringParade) {
                     toggler.setText("Update");
                     alteringParade = true;
+                    map.clear();
                     viewRl.setVisibility(View.GONE);
                     EditRl.setVisibility(View.VISIBLE);
                 }else {

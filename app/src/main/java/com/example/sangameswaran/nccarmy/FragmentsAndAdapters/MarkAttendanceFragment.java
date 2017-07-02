@@ -1,5 +1,6 @@
 package com.example.sangameswaran.nccarmy.FragmentsAndAdapters;
 
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,9 +14,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.sangameswaran.nccarmy.Entities.AttendanceEntity;
@@ -27,18 +32,24 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 
 /**
  * Created by Sangameswaran on 12-05-2017.
  */
 
 public class MarkAttendanceFragment extends Fragment{
-    EditText date,yearOfJoining;
+   TextView date;
+    Spinner yearOfJoining;
     Button markAttendance;
     Button generateReport;
     RecyclerView recyclerView;
     RelativeLayout loader2;
+    TextView prompt1,prompt2;
     RecyclerView.LayoutManager layoutManager;
     RecyclerView.Adapter adapter;
     ArrayList<AttendanceEntity> arrayList=new ArrayList<>();
@@ -48,35 +59,59 @@ public class MarkAttendanceFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.mark_attendance_fragment_layout,container,false);
-        date=(EditText)v.findViewById(R.id.etDate);
+        date=(TextView) v.findViewById(R.id.etDate);
+        prompt1=(TextView)v.findViewById(R.id.prompt1);
+        getActivity().setTitle("Mark Attendance");
+        prompt2=(TextView)v.findViewById(R.id.prompt2);
+        yearOfJoining=(Spinner)v.findViewById(R.id.yearSelectionSpinner);
         loader2=(RelativeLayout) v.findViewById(R.id.loader2);
-        yearOfJoining=(EditText)v.findViewById(R.id.yearKey);
         generateReport=(Button)v.findViewById(R.id.btnGenerateReport);
         markAttendance=(Button)v.findViewById(R.id.btnViewAttendance);
         reportProgress=new ProgressDialog(getActivity());
         reportProgress.setMessage("Report generating..");
         recyclerView=(RecyclerView)v.findViewById(R.id.attendanceRecyclerView);
         layoutManager=new LinearLayoutManager(getActivity());
+        List<String> yoj=new ArrayList<>();
+        yoj.add("2015");
+        yoj.add("2016");
+        yoj.add("2017");
+        yoj.add("2018");
+        yoj.add("2019");
+        yoj.add("2020");
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, yoj);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        yearOfJoining.setAdapter(dataAdapter);
+        date.setOnClickListener(new View.OnClickListener() {
+            Calendar c=Calendar.getInstance();
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog datePickerDialog=new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        date.setText(dayOfMonth+"-"+String.valueOf(month+1)+"-"+year+"-");
+                    }
+                },c.get(Calendar.YEAR),c.get(Calendar.MONTH),c.get(Calendar.DATE));
+                datePickerDialog.setMessage("Select parade date");
+                datePickerDialog.setCancelable(false);
+                datePickerDialog.show();
+            }
+        });
         markAttendance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 final String s1,s2;
                 s1=date.getText().toString();
-                s2=yearOfJoining.getText().toString();
+                s2=String.valueOf(yearOfJoining.getSelectedItem());
                 if(s1.equals(""))
                     date.setError("Enter date");
-                if (s2.equals(""))
-                    yearOfJoining.setError("Enter year of joining");
                 if(s1.equals("")||s2.equals(""))
                 {
-                    Toast.makeText(getActivity(),"Enter fields, All are compulsory",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(),"Select date to continue..",Toast.LENGTH_LONG).show();
                 }
                 else
                 {
-                    if(ValidateDate(s1)==true)
-                    {
-                        loader2.setVisibility(View.VISIBLE);
+                    if(ValidateDate(s1))
+                    {loader2.setVisibility(View.VISIBLE);
                     DatabaseReference maintainEMECount=FirebaseDatabase.getInstance().getReference("PARADE/"+s1+s2+"/CountEMEPresent");
                     maintainEMECount.setValue("0");
                     DatabaseReference maintainENGcount=FirebaseDatabase.getInstance().getReference("PARADE/"+s1+s2+"/CountENGPresent");
@@ -102,8 +137,11 @@ public class MarkAttendanceFragment extends Fragment{
                             if (dataSnapshot.hasChildren())
                             {
                                 generateReport.setVisibility(View.VISIBLE);
-                                Toast.makeText(getActivity(),"Fetching list,Please wait",Toast.LENGTH_LONG).show();
-
+                                markAttendance.setVisibility(View.GONE);
+                                date.setVisibility(View.GONE);
+                                yearOfJoining.setVisibility(View.GONE);
+                                prompt2.setVisibility(View.GONE);
+                                prompt1.setVisibility(View.GONE);
                                 for(DataSnapshot dsp : dataSnapshot.getChildren())
                                 {
                                     AttendanceEntity entity=new AttendanceEntity();
@@ -136,7 +174,7 @@ public class MarkAttendanceFragment extends Fragment{
                 }
             }
         });
-        adapter=new AttendanceRecyclerViewAdapter(arrayList,date.getText().toString(),yearOfJoining.getText().toString());
+        adapter=new AttendanceRecyclerViewAdapter(arrayList,date.getText().toString(),String.valueOf(yearOfJoining.getSelectedItem()));
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(layoutManager);
         adapter.notifyDataSetChanged();
@@ -146,7 +184,7 @@ public class MarkAttendanceFragment extends Fragment{
             public void onClick(View v) {
                 reportProgress.show();
                 final AttendanceReportEntity entity=new AttendanceReportEntity();
-                DatabaseReference m1=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+yearOfJoining.getText().toString()+"/CountEMEPresent");
+                DatabaseReference m1=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+String.valueOf(yearOfJoining.getSelectedItem())+"/CountEMEPresent");
                 m1.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -159,7 +197,7 @@ public class MarkAttendanceFragment extends Fragment{
 
                     }
                 });
-                DatabaseReference m2=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+yearOfJoining.getText().toString()+"/CountEMEAbsent");
+                DatabaseReference m2=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+String.valueOf(yearOfJoining.getSelectedItem())+"/CountEMEAbsent");
                 m2.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -172,7 +210,7 @@ public class MarkAttendanceFragment extends Fragment{
 
                     }
                 });
-                DatabaseReference m3=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+yearOfJoining.getText().toString()+"/CountENGPresent");
+                DatabaseReference m3=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+String.valueOf(yearOfJoining.getSelectedItem())+"/CountENGPresent");
                 m3.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -185,7 +223,7 @@ public class MarkAttendanceFragment extends Fragment{
 
                     }
                 });
-                DatabaseReference m4=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+yearOfJoining.getText().toString()+"/CountENGAbsent");
+                DatabaseReference m4=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+String.valueOf(yearOfJoining.getSelectedItem())+"/CountENGAbsent");
                 m4.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -199,7 +237,7 @@ public class MarkAttendanceFragment extends Fragment{
 
                     }
                 });
-                DatabaseReference m5=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+yearOfJoining.getText().toString()+"/CountSIGPresent");
+                DatabaseReference m5=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+String.valueOf(yearOfJoining.getSelectedItem())+"/CountSIGPresent");
                 m5.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -212,7 +250,7 @@ public class MarkAttendanceFragment extends Fragment{
 
                     }
                 });
-                DatabaseReference m6=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+yearOfJoining.getText().toString()+"/CountSIGAbsent");
+                DatabaseReference m6=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+String.valueOf(yearOfJoining.getSelectedItem())+"/CountSIGAbsent");
                 m6.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -224,7 +262,7 @@ public class MarkAttendanceFragment extends Fragment{
 
                     }
                 });
-                DatabaseReference m7=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+yearOfJoining.getText().toString()+"/CountParadeAbsent");
+                DatabaseReference m7=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+String.valueOf(yearOfJoining.getSelectedItem())+"/CountParadeAbsent");
                 m7.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -239,7 +277,7 @@ public class MarkAttendanceFragment extends Fragment{
 
                     }
                 });
-                DatabaseReference m8=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+yearOfJoining.getText().toString()+"/CountParadePresent");
+                DatabaseReference m8=FirebaseDatabase.getInstance().getReference("PARADE/"+date.getText().toString()+String.valueOf(yearOfJoining.getSelectedItem())+"/CountParadePresent");
                 m8.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -264,13 +302,13 @@ public class MarkAttendanceFragment extends Fragment{
                          double d=(double)a/c;
                          Log.d("Tag","d="+d+"c="+c+"a="+a);
                          d*=100;
-
-                         entity.setBatch(yearOfJoining.getText().toString());
+                             entity.setBatch(String.valueOf(yearOfJoining.getSelectedItem()));
                          entity.setPercentage_of_present(""+d+"%");
-                         DatabaseReference myReference=FirebaseDatabase.getInstance().getReference("PARADE_REPORT/"+date.getText().toString()+yearOfJoining.getText().toString());
+                         DatabaseReference myReference=FirebaseDatabase.getInstance().getReference("PARADE_REPORT/"+date.getText().toString()+String.valueOf(yearOfJoining.getSelectedItem()));
                          myReference.setValue(entity);
                          reportProgress.dismiss();
-                         Toast.makeText(getActivity(),"Report generated",Toast.LENGTH_LONG).show();}catch (Exception e){
+                         Toast.makeText(getActivity(),"Report generated",Toast.LENGTH_LONG).show();
+                         } catch (Exception e){
                              Toast.makeText(getActivity(),"Server Error, Try Again",Toast.LENGTH_LONG).show();
                          }
                          MarkAttendanceFragment fragment=new MarkAttendanceFragment();

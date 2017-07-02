@@ -37,7 +37,7 @@ public class ViewPermissionChangesFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.view_permission_changes_fragment,container,false);
-
+        getActivity().setTitle("View Permission changes");
         recyclerView=(RecyclerView)v.findViewById(R.id.permissionRecyclerView);
         manager=new LinearLayoutManager(getContext());
         loader3=(RelativeLayout)v.findViewById(R.id.loader3);
@@ -51,7 +51,6 @@ public class ViewPermissionChangesFragment extends Fragment
                 {
                     for(DataSnapshot dsp :dataSnapshot.getChildren())
                     {
-                        Log.d("Test","here");
                         PermissionChangeEntity entity=new PermissionChangeEntity();
                         entity=dsp.getValue(PermissionChangeEntity.class);
                         arrayList.add(entity);
@@ -62,23 +61,20 @@ public class ViewPermissionChangesFragment extends Fragment
                     }
                     Collections.reverse(arrayList);
                     adapter.notifyDataSetChanged();
+                   //recyclerView.scrollToPosition(arrayList.size()-1);
                     loader3.setVisibility(View.GONE);
                 }
-                else
-                {
+                else {
                     Toast.makeText(getActivity().getApplicationContext(),"Connectivity Error",Toast.LENGTH_LONG).show();
                 }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
                 Toast.makeText(getActivity().getApplicationContext(),"DB Error",Toast.LENGTH_LONG).show();
             }
 
         });
-       //PermissionChangeEntity entity=new PermissionChangeEntity("user","test","tr","er");
-       //arrayList.add(entity);
         adapter=new PermissionRecyclerViewAdapter(arrayList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(manager);

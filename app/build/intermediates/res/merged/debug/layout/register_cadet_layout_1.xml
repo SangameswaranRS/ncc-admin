@@ -9,11 +9,9 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true">
-
-        <RelativeLayout
+        <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <TextView
                 android:id="@+id/tvJustDisplayOfficialDetails"
                 android:layout_width="match_parent"
@@ -47,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/etRegisterName"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="23dp"
                 android:ems="10"
                 android:hint="Enter Your Regimental number"
                 android:inputType="textPersonName" />
@@ -58,12 +56,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/etRegisterRegimentalNumber"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="23dp"
                 android:ems="10"
                 android:hint="Enter your rank"
                 android:inputType="textPersonName" />
 
-            <EditText
+           <!-- <EditText
                 android:id="@+id/etPlatoon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +70,15 @@
                 android:layout_marginTop="28dp"
                 android:ems="10"
                 android:hint="Enter your platoon"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName" />-->
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPlatoon"
+                android:layout_below="@+id/etRank"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp">
+            </Spinner>
 
 
             <EditText

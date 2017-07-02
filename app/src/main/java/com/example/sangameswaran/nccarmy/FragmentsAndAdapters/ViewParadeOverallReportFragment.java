@@ -40,8 +40,8 @@ public class ViewParadeOverallReportFragment extends Fragment {
         allReports=new ArrayList<>();
         viewParadeOverallReportRecyclerView=(RecyclerView) v.findViewById(R.id.viewparadeoverallreportrecyclerview);
         manager=new LinearLayoutManager(getActivity());
+        getActivity().setTitle("Parade Reports");
         loader4=(RelativeLayout)v.findViewById(R.id.loader4);
-        //generate and store all reports
         final DatabaseReference mdatabase= FirebaseDatabase.getInstance().getReference("PARADE_REPORT");
         mdatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

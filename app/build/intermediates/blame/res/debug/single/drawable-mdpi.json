@@ -12,12 +12,24 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\date_icon.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_nav_drawer.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\ic_nav_drawer.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_name.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\ic_action_name.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\add_ic.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\add_ic.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\bgd.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\bgd.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\nav_header_image_holo_dark.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\nav_header_image_holo_dark.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\plus.png",

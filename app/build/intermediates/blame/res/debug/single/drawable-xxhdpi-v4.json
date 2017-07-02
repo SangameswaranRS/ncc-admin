@@ -476,6 +476,10 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_07_light.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\designer_wallpaper.jpg",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xxhdpi\\designer_wallpaper.jpg"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_08_dark.png",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_08_dark.png"
     },

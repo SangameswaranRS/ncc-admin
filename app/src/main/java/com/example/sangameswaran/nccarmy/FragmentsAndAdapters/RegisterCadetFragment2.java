@@ -1,8 +1,12 @@
 package com.example.sangameswaran.nccarmy.FragmentsAndAdapters;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,11 +28,13 @@ public class RegisterCadetFragment2 extends Fragment
 {
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13;
     Button bFinish;
+    AlertDialog.Builder successResponse;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.register_cadet_layout_2,container,false);
-
+        getActivity().setTitle("Register new cadets");
+        successResponse=new AlertDialog.Builder(getActivity());
         e1=(EditText)v.findViewById(R.id.etRegisterCollegeRollNumber);
         e2=(EditText)v.findViewById(R.id.etRegisterFathersName);
         e3=(EditText)v.findViewById(R.id.etRegisterMotherName);
@@ -127,11 +133,25 @@ public class RegisterCadetFragment2 extends Fragment
                     DatabaseReference myref2=FirebaseDatabase.getInstance().getReference("Attendance Data/"+number);
                     String id2=myref2.push().getKey();
                     myref2.child(id2).setValue(entityClass);
-                    Toast.makeText(getActivity(),"Cadet registered",Toast.LENGTH_LONG).show();
+                   inflateSuccessAlertDialog();
                 }
             }
         });
 
         return v;
+    }
+
+    private void inflateSuccessAlertDialog() {
+        LayoutInflater inflator=(LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View v=inflator.inflate(R.layout.alert_cadet_successfully_registered,null,false);
+        successResponse.setView(v);
+        successResponse.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                RegisterCadetFragment fragment=new RegisterCadetFragment();
+                getFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
+        }).setCancelable(false).show();
+
     }
 }

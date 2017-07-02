@@ -28,6 +28,10 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\dress_icon.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_nav_drawer.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\ic_nav_drawer.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\date_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\date_icon.png"
     },
@@ -38,5 +42,9 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\time_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\time_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\nav_header_image_holo_dark.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\nav_header_image_holo_dark.png"
     }
 ]

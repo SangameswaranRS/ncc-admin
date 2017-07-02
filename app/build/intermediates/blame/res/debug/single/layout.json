@@ -152,6 +152,10 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_cadet_successfully_registered.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\alert_cadet_successfully_registered.xml"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_screen_content_include.xml"
     },

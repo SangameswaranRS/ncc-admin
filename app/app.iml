@@ -132,6 +132,7 @@
     <orderEntry type="library" exported="" name="MPAndroidChart-v3.0.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-plus-10.2.0" level="project" />
     <orderEntry type="library" exported="" name="firebase-common-10.2.0" level="project" />
+    <orderEntry type="library" exported="" name="circleimageview-2.1.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-analytics-impl-10.2.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-basement-10.2.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-fitness-10.2.0" level="project" />

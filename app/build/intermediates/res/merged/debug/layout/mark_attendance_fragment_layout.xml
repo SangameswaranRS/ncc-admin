@@ -10,27 +10,30 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter the date DATE FORMAT -DD-MM-YYYY-"/>
-    <EditText
+            android:id ="@+id/prompt1"
+            android:text="Select date"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etDate"
-        android:hint="Enter the parade date"
+        android:drawableLeft="@drawable/date_icon"
         android:inputType="textEmailAddress"
         />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DOJ for the batch"/>
-    <EditText
+            android:text="DOJ for the batch"
+            android:id="@+id/prompt2"/>
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter the year of joining"
-        android:id="@+id/yearKey"
-        android:text="2015"
-        android:inputType="number"
-        />
-
+        android:id="@+id/yearSelectionSpinner">
+        </Spinner>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:weightSum="1"
+            android:background="#cc000000"></LinearLayout>
     <Button
         android:id="@+id/btnViewAttendance"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"

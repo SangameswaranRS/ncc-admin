@@ -12,12 +12,20 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\add_ic.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\nav_header_image_holo_dark.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\nav_header_image_holo_dark.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\parade_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\parade_icon.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\plus_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\plus_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_nav_drawer.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\ic_nav_drawer.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\attendance_icon_drawable_left.png",

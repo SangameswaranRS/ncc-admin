@@ -46,6 +46,7 @@ public class ParadeTaskReportFragment extends Fragment{
     @Override
     public View onCreateView(final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.parade_task_report_fragment,container,false);
+        getActivity().setTitle("Parade Task");
         paradeTasks=(RecyclerView)v.findViewById(R.id.paradeTaskReportRecyclerView);
         fab=(FloatingActionButton)v.findViewById(R.id.addFAB);
         rlLoader=(RelativeLayout)v.findViewById(R.id.rlLoader);

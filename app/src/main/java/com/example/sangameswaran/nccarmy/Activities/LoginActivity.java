@@ -91,7 +91,7 @@ public class LoginActivity extends AppCompatActivity{
                                                 Toast.makeText(getApplicationContext(),"Server Error",Toast.LENGTH_LONG).show();
                                                 finish();
                                             }
-                                            createSession(adminLogin.getUser_name());
+                                            createSession(adminLogin.getUser_name(),adminLogin);
                                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                             startActivity(intent);
                                         }
@@ -105,7 +105,7 @@ public class LoginActivity extends AppCompatActivity{
                                     {
                                         if(adminLogin.getBlocked_status().equals("0")) {
                                             loaderMessage.setText("Retreiving your last settings...");
-                                            checkSession(adminLogin.getUser_name());
+                                            checkSession(adminLogin.getUser_name(),adminLogin);
                                         }else {
                                             progressLL.setVisibility(View.GONE);
                                             Toast.makeText(getApplicationContext(),"You are blocked,Sorry",Toast.LENGTH_LONG).show();
@@ -142,7 +142,7 @@ public class LoginActivity extends AppCompatActivity{
 
     }
 
-    private void checkSession(String user_name) {
+    private void checkSession(String user_name, final AdminEntity adminLogin) {
         DatabaseReference get=FirebaseDatabase.getInstance().getReference("ACTIVE_SESSION/"+user_name);
         get.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -152,6 +152,22 @@ public class LoginActivity extends AppCompatActivity{
                 TelephonyManager tm= (TelephonyManager) LoginActivity.this.getSystemService(TELEPHONY_SERVICE);
                 String actualImei=tm.getDeviceId();
                 if(imei.equals(actualImei)){
+                    SharedPreferences sp=getSharedPreferences("LoginCredentials",MODE_PRIVATE);
+                    SharedPreferences.Editor editor=sp.edit();
+                    editor.putString("MyloginID",adminLogin.getUser_name());
+                    editor.commit();
+                    SharedPreferences w=getSharedPreferences("userDetails",MODE_PRIVATE);
+                    SharedPreferences.Editor editor1=w.edit();
+                    try {
+                        Gson gson=new Gson();
+                        String json=gson.toJson(adminLogin,AdminEntity.class);
+                        editor1.putString("user",json);
+                        editor1.commit();
+                    }catch (Exception e){
+                        Toast.makeText(getApplicationContext(),"Server Error",Toast.LENGTH_LONG).show();
+                        finish();
+                    }
+
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 }else {
@@ -159,7 +175,12 @@ public class LoginActivity extends AppCompatActivity{
                     progressLL.setVisibility(View.GONE);
                     tvLoginButton.setVisibility(View.VISIBLE);
                     Toast.makeText(getApplicationContext(),"Login From Multiple Devices is blocked",Toast.LENGTH_LONG).show();
-                }}catch (Exception e){}
+                }}catch (Exception e){
+                    ContainerLL.setVisibility(View.VISIBLE);
+                    progressLL.setVisibility(View.GONE);
+                    tvLoginButton.setVisibility(View.VISIBLE);
+                    Toast.makeText(getApplicationContext(),"parse Exception",Toast.LENGTH_LONG).show();
+                }
 
             }
 
@@ -170,7 +191,7 @@ public class LoginActivity extends AppCompatActivity{
         });
     }
 
-    private void createSession(String userName) {
+    private void createSession(String userName,AdminEntity entity) {
         DatabaseReference sessionApi=FirebaseDatabase.getInstance().getReference("ACTIVE_SESSION");
         TelephonyManager telephonyManager= (TelephonyManager) this.getSystemService(TELEPHONY_SERVICE);
         sessionApi.child(userName).setValue(telephonyManager.getDeviceId());

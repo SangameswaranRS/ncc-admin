@@ -38,5 +38,13 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\time_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xxhdpi\\time_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_nav_drawer.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_nav_drawer.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\nav_header_image_holo_dark.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xxhdpi\\nav_header_image_holo_dark.png"
     }
 ]

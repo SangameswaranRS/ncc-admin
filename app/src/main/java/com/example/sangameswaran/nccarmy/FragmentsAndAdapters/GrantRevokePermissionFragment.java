@@ -38,6 +38,7 @@ public class GrantRevokePermissionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.grant_revoke_permission_fragment,container,false);
         //initialize views
+        getActivity().setTitle("Modify Permissions");
         etRevokeUserId=(EditText)v.findViewById(R.id.etRevokeUserID);
         etReason=(EditText)v.findViewById(R.id.etReason);
         RevokeBtn=(TextView)v.findViewById(R.id.tvRevokeButton);
