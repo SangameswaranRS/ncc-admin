@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.example.sangameswaran.nccarmy.Entities.AttendanceReportEntity;
 import com.example.sangameswaran.nccarmy.Entities.ParadeDeclarationEntity;
+import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ChatFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.CreateNewAdminFragment;
 import com.example.sangameswaran.nccarmy.Entities.AdminEntity;
 import com.example.sangameswaran.nccarmy.Entities.CadetEntity;
@@ -519,8 +520,6 @@ public class MainActivity extends AppCompatActivity
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
             }
         }
-        else if (id==R.id.nav_share){
-        }
         else if (id==R.id.dashboard){
             if(adminEntity.getIsSuperAdmin().equals("1")){
                 Intent intent=new Intent(this,MainActivity.class);
@@ -529,6 +528,9 @@ public class MainActivity extends AppCompatActivity
                 UnAuthFragment fragment=new UnAuthFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
             }
+        }else if (id==R.id.chat){
+            ChatFragment fragment=new ChatFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\send_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\send_icon.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\dress_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\dress_icon.png"
     },

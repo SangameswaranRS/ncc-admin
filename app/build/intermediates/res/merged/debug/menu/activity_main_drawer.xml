@@ -60,14 +60,14 @@
                     android:checkable="true"/>
             </menu>
         </item>
+        <item android:title="Communication">
+            <menu>
+                <item android:title="Share your ideas"
+                    android:id="@+id/chat"
+                    android:icon="@drawable/send_icon"
+                    android:checkable="true"/>
+            </menu>
+        </item>
+
     </group>
-    <item android:title="Ideate your thoughts">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share your thoughts"
-                android:checkable="true"/>
-        </menu>
-    </item>
 </menu>

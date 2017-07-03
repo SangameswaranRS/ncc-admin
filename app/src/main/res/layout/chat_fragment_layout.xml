@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvMessage">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.850">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.85"
+                android:hint="Your message here"
+                android:id="@+id/etMessage"
+                />
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.150"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#64a844"
+            android:src="@drawable/send_icon"
+            android:id="@+id/drawSend"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

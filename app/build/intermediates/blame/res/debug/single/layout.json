@@ -8,10 +8,6 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_parade_overall_report_card_layout.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\db57ed12ec06b35206038096afe40a66982f1985\\output\\res\\layout\\place_autocomplete_progress.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_parade_task_report_layout.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\add_parade_task_report_layout.xml"
     },
@@ -28,10 +24,6 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
@@ -40,92 +32,36 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_controller_volume_item.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\layout\\mr_controller_volume_item.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_mini_controller.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_mini_controller.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\app_bar_main.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\permission_recycler_view_card_layout.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\permission_recycler_view_card_layout.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_cadets_details_fragment.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_cadets_details_fragment.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mark_attendance_fragment_layout.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\mark_attendance_fragment_layout.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\create_new_admin_fragment.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\create_new_admin_fragment.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_chooser_list_item.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\layout\\mr_chooser_list_item.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_tracks_chooser_dialog_layout.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_tracks_chooser_dialog_layout.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_help_text.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_help_text.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grant_revoke_permission_fragment.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\grant_revoke_permission_fragment.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register_cadet_layout_1.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\register_cadet_layout_1.xml"
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grant_revoke_permission_fragment.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\grant_revoke_permission_fragment.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register_cadet_layout_1.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\register_cadet_layout_1.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
@@ -134,14 +70,6 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login_activity.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\login_activity.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_intro_overlay.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_intro_overlay.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_navigation_menu.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
@@ -156,60 +84,32 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\alert_cadet_successfully_registered.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_info_window.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\3e6f2585bcf8d3f0d30741b12de854abdb928a33\\output\\res\\layout\\amu_info_window.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\unauth_fragment.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\unauth_fragment.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_cadet_card_layout.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_cadet_card_layout.xml"
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\3e6f2585bcf8d3f0d30741b12de854abdb928a33\\output\\res\\layout\\amu_webview.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\3e6f2585bcf8d3f0d30741b12de854abdb928a33\\output\\res\\layout\\amu_webview.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_template_lines.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_tracks_chooser_dialog_row_layout.xml",
@@ -220,28 +120,192 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_menu_item_action_area.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\parade_task_report_card_layout.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\parade_task_report_card_layout.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_layout_snackbar_include.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_expanded_controller_activity.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_expanded_controller_activity.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_full_report_attendance_activity.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_full_report_attendance_activity.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\parade_task_report_fragment.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\parade_task_report_fragment.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\db57ed12ec06b35206038096afe40a66982f1985\\output\\res\\layout\\place_autocomplete_item_prediction.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_permission_changes_fragment.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_permission_changes_fragment.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_controller_material_dialog_b.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\layout\\mr_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register_cadet_layout_2.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\register_cadet_layout_2.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_fragment_layout.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\chat_fragment_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\db57ed12ec06b35206038096afe40a66982f1985\\output\\res\\layout\\place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_controller_volume_item.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\layout\\mr_controller_volume_item.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_mini_controller.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_mini_controller.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\app_bar_main.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\permission_recycler_view_card_layout.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\permission_recycler_view_card_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\create_new_admin_fragment.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\create_new_admin_fragment.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_tracks_chooser_dialog_layout.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_tracks_chooser_dialog_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_help_text.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_help_text.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_intro_overlay.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_intro_overlay.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_card_static.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\chat_card_static.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_info_window.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\3e6f2585bcf8d3f0d30741b12de854abdb928a33\\output\\res\\layout\\amu_info_window.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_cadet_card_layout.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_cadet_card_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\parade_task_report_card_layout.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\parade_task_report_card_layout.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
@@ -264,14 +328,6 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_expanded_controller_activity.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_expanded_controller_activity.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_layout_snackbar.xml"
     },
@@ -280,24 +336,8 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_full_report_attendance_activity.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_full_report_attendance_activity.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_template_big_media.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\parade_task_report_fragment.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\parade_task_report_fragment.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
@@ -308,28 +348,16 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_text_bubble.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\3e6f2585bcf8d3f0d30741b12de854abdb928a33\\output\\res\\layout\\amu_text_bubble.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_text_bubble.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\3e6f2585bcf8d3f0d30741b12de854abdb928a33\\output\\res\\layout\\amu_text_bubble.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_volume_control.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\layout\\mr_volume_control.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_navigation_item.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_main.xml",
@@ -344,24 +372,8 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\db57ed12ec06b35206038096afe40a66982f1985\\output\\res\\layout\\place_autocomplete_item_prediction.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\db57ed12ec06b35206038096afe40a66982f1985\\output\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_permission_changes_fragment.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_permission_changes_fragment.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_controller_material_dialog_b.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\layout\\mr_controller_material_dialog_b.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register_cadet_layout_2.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\register_cadet_layout_2.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_parade_overall_report.xml",
@@ -370,9 +382,5 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_navigation_item_separator.xml"
-    },
-    {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_alert_dialog_material.xml"
     }
 ]
