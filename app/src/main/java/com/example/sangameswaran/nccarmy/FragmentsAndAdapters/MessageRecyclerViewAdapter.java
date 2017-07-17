@@ -47,7 +47,11 @@ public class MessageRecyclerViewAdapter extends RecyclerView.Adapter<MessageRecy
         if (messages.get(position).getSender().equals(user)){
             holder.cview.setCardBackgroundColor(Color.parseColor("#ffffff"));
             holder.sender.setTextColor(Color.parseColor("#64a844"));
-            holder.masterRl.setGravity(Gravity.END);
+            RelativeLayout.LayoutParams lp =
+                    (RelativeLayout.LayoutParams) holder.masterRl.getLayoutParams();
+            lp.addRule(RelativeLayout.ALIGN_PARENT_LEFT, 0);
+            lp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+            holder.masterRl.setLayoutParams(lp);
         }else {
             holder.cview.setCardBackgroundColor(Color.parseColor("#FFF2948F"));
             holder.sender.setTextColor(Color.parseColor("#ff0000"));

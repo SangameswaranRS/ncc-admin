@@ -128,6 +128,7 @@ public class RegisterCadetFragment2 extends Fragment
                     entityClass.setName(activity.register.getName());
                     entityClass.setPlatoon(activity.register.getPlatoon());
                     entityClass.setRegimental_number(activity.register.getRegimental_number());
+                    entityClass.setRank(activity.register.getRank());
                     int number=Integer.parseInt(activity.register.getPass_out_year());
                     number-=3;
                     DatabaseReference myref2=FirebaseDatabase.getInstance().getReference("Attendance Data/"+number);

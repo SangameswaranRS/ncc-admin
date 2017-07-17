@@ -14,8 +14,14 @@ import android.widget.TextView;
 import com.example.sangameswaran.nccarmy.Activities.ViewFullReportAttendanceActivity;
 import com.example.sangameswaran.nccarmy.Entities.ViewParadeOverallReportEntity;
 import com.example.sangameswaran.nccarmy.R;
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Sangameswaran on 18-05-2017.
@@ -72,7 +78,28 @@ public class ViewParadeOverallReportAdapter extends RecyclerView.Adapter<ViewPar
         holder.t9.setText("ENGINEERS ABSENT COUNT : "+entity.getReport().getENGabsentCount());
         holder.t10.setText("SIGNALS PRESENT COUNT : "+entity.getReport().getSIGpresentCount());
         holder.t11.setText("SIGNALS ABSENT COUNT : "+entity.getReport().getSIGabsentCount());
-
+        List<PieEntry> entry=new ArrayList<>();
+        int emePresent=Integer.parseInt(entity.getReport().getEMEpresentCount());
+        int engPresent=Integer.parseInt(entity.getReport().getENGpresentCount());
+        int sigPresent=Integer.parseInt(entity.getReport().getSIGpresentCount());
+        float eme=((float) ((float)emePresent/(emePresent+engPresent+sigPresent)))*100;
+        float eng=((float) ((float)engPresent/(emePresent+engPresent+sigPresent)))*100;
+        float sig=((float) ((float)sigPresent/(emePresent+engPresent+sigPresent)))*100;
+        List<PieEntry> pieEntry=new ArrayList<PieEntry>();
+        pieEntry.add(new PieEntry(eme,"EME"));
+        pieEntry.add(new PieEntry(eng,"ENGINEERS"));
+        pieEntry.add(new PieEntry(sig,"SIGNALS"));
+        PieDataSet s=new PieDataSet(pieEntry,"PRESENT PERCENT");
+        List<Integer> col=new ArrayList<Integer>();
+        col.add(Color.parseColor("#60a844"));
+        col.add(Color.parseColor("#dcdc39"));
+        col.add(Color.parseColor("#ff0000"));
+        s.setColors(col);
+        PieData d=new PieData(s);
+        holder.chart.setData(d);
+        Legend d2=holder.chart.getLegend();
+        d2.setEnabled(false);
+        holder.chart.invalidate();
         holder.CardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,7 +109,6 @@ public class ViewParadeOverallReportAdapter extends RecyclerView.Adapter<ViewPar
                 context.startActivity(intent);
             }
         });
-
     }
     @Override
     public int getItemCount() {
@@ -93,6 +119,7 @@ public class ViewParadeOverallReportAdapter extends RecyclerView.Adapter<ViewPar
         View CardView;
         TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11;
         LinearLayout color;
+        PieChart chart;
 
         public ViewParadeOverallReportViewHolder(View itemView) {
             super(itemView);
@@ -102,6 +129,7 @@ public class ViewParadeOverallReportAdapter extends RecyclerView.Adapter<ViewPar
             t2=(TextView)itemView.findViewById(R.id.te2);
             t3=(TextView)itemView.findViewById(R.id.te3);
             t4=(TextView)itemView.findViewById(R.id.te4);
+            chart=(PieChart)itemView.findViewById(R.id.chartParadeStmt);
             t5=(TextView)itemView.findViewById(R.id.te5);
             t6=(TextView)itemView.findViewById(R.id.te6);
             t7=(TextView)itemView.findViewById(R.id.te7);

@@ -25,7 +25,8 @@ import java.util.List;
 
 public class RegisterCadetFragment extends Fragment {
 
-    EditText e1,e2,e3,e5,e6,e7,e8,e9;
+    EditText e1,e2,e5,e6,e7,e8,e9;
+    Spinner e3;
     Spinner e4;
     Button btnNext;
     @Nullable
@@ -34,7 +35,7 @@ public class RegisterCadetFragment extends Fragment {
         View v=inflater.inflate(R.layout.register_cadet_layout_1,container,false);
         e1=(EditText)v.findViewById(R.id.etRegisterName);
         e2=(EditText)v.findViewById(R.id.etRegisterRegimentalNumber);
-        e3=(EditText)v.findViewById(R.id.etRank);
+        e3=(Spinner) v.findViewById(R.id.etRank);
         getActivity().setTitle("Register new cadets");
         e4=(Spinner) v.findViewById(R.id.etPlatoon);
         e5=(EditText)v.findViewById(R.id.etPassoutYear);
@@ -46,6 +47,18 @@ public class RegisterCadetFragment extends Fragment {
         platoons.add("EME");
         platoons.add("Engineers");
         platoons.add("Signals");
+        List<String> rank=new ArrayList<>();
+        rank.add("CSUO");
+        rank.add("CUO");
+        rank.add("CQMS");
+        rank.add("CSM");
+        rank.add("Sgt");
+        rank.add("Cpl");
+        rank.add("LCpl");
+        rank.add("Cdt");
+        ArrayAdapter<String> rankAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item,rank);
+        rankAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        e3.setAdapter(rankAdapter);
         ArrayAdapter<String> platoonAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item,platoons);
         platoonAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         e4.setAdapter(platoonAdapter);
@@ -59,8 +72,6 @@ public class RegisterCadetFragment extends Fragment {
                     e1.setError("Name Required");
                 if(e2.getText().toString().equals(""))
                     e2.setError("Regimental number Required");
-                if(e3.getText().toString().equals(""))
-                    e3.setError("Rank Required");
                 if(e5.getText().toString().equals(""))
                     e5.setError("Passout year Required");
                 if(e6.getText().toString().equals(""))
@@ -74,7 +85,7 @@ public class RegisterCadetFragment extends Fragment {
                 String s1,s2,s3,s4,s5,s6,s7,s8,s9;
                 s1=e1.getText().toString();
                 s2=e2.getText().toString();
-                s3=e3.getText().toString();
+                s3=String.valueOf(e3.getSelectedItem());
                 s4=String.valueOf(e4.getSelectedItem());
                 s5=e5.getText().toString();
                 s6=e6.getText().toString();

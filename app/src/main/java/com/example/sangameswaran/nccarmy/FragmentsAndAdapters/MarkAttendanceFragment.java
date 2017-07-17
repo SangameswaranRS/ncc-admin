@@ -147,7 +147,7 @@ public class MarkAttendanceFragment extends Fragment{
                                     AttendanceEntity entity=new AttendanceEntity();
                                     entity=dsp.getValue(AttendanceEntity.class);
                                     arrayList.add(entity);
-                                    adapter=new AttendanceRecyclerViewAdapter(arrayList,s1,s2);
+                                    adapter=new AttendanceRecyclerViewAdapter(arrayList,s1,s2,getContext());
                                     recyclerView.setAdapter(adapter);
                                     recyclerView.setLayoutManager(layoutManager);
                                     adapter.notifyDataSetChanged();
@@ -174,7 +174,7 @@ public class MarkAttendanceFragment extends Fragment{
                 }
             }
         });
-        adapter=new AttendanceRecyclerViewAdapter(arrayList,date.getText().toString(),String.valueOf(yearOfJoining.getSelectedItem()));
+        adapter=new AttendanceRecyclerViewAdapter(arrayList,date.getText().toString(),String.valueOf(yearOfJoining.getSelectedItem()),getContext());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(layoutManager);
         adapter.notifyDataSetChanged();

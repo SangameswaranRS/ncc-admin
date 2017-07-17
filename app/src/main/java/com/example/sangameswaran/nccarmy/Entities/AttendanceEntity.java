@@ -6,7 +6,7 @@ package com.example.sangameswaran.nccarmy.Entities;
 
 public class AttendanceEntity {
 
-    String regimental_number,name, platoon;
+    String regimental_number,name, platoon,rank;
 
     public AttendanceEntity()
     {
@@ -14,11 +14,20 @@ public class AttendanceEntity {
     }
 
 
-    public AttendanceEntity(String regimental_number, String name, String platoon)
+    public AttendanceEntity(String regimental_number, String name, String platoon,String rank)
     {
         this.regimental_number = regimental_number;
         this.name = name;
         this.platoon = platoon;
+        this.rank=rank;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
     }
 
     public String getRegimental_number() {

@@ -1,6 +1,11 @@
 package com.example.sangameswaran.nccarmy.FragmentsAndAdapters;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Color;
+import android.support.annotation.IdRes;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -8,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.example.sangameswaran.nccarmy.Entities.AttendanceEntity;
@@ -25,15 +31,20 @@ import java.util.ArrayList;
 public class AttendanceRecyclerViewAdapter extends RecyclerView.Adapter<AttendanceRecyclerViewAdapter.AttendanceRecyclerViewHolder> {
     ArrayList<AttendanceEntity> attendanceEntities=new ArrayList<>();
     String date,yoj;
+    Context ctx;
+    String choice="Absent with prior permission";
+    AlertDialog.Builder absentAlert;
     public int EMEpresent=0,EMEabsent=0;
     public int ENGpresent=0,ENGabsent=0;
     public int SIGpresent=0,SIGabsent=0;
     public int present=0,absent=0;
-    AttendanceRecyclerViewAdapter(ArrayList<AttendanceEntity> attendanceEntities,String date,String yoj)
+    AttendanceRecyclerViewAdapter(ArrayList<AttendanceEntity> attendanceEntities,String date,String yoj,Context co)
     {
         this.date=date;
         this.yoj=yoj;
         this.attendanceEntities=attendanceEntities;
+        this.ctx=co;
+        absentAlert=new AlertDialog.Builder(ctx);
     }
     @Override
     public AttendanceRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -128,17 +139,39 @@ public class AttendanceRecyclerViewAdapter extends RecyclerView.Adapter<Attendan
                 maintainSIGcount.setValue(""+SIGabsent);
                 DatabaseReference maintainCount=FirebaseDatabase.getInstance().getReference("PARADE/"+date+yoj+"/CountParadeAbsent");
                 maintainCount.setValue(""+absent);
-
                 entity1.setCadet(entity2);
-                entity1.setAttendance("Absent");
+                String choice=inflateAbsentDialog(entity1);
+            }
+        });
+
+    }
+
+    private String inflateAbsentDialog( final ParadeEntity entity1) {
+        LayoutInflater inflator= (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View dialogView=inflator.inflate(R.layout.alert_absent_cadet,null,false);
+        RadioGroup choiceSelector=(RadioGroup)dialogView.findViewById(R.id.absentStat);
+        choiceSelector.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
+                if(checkedId==R.id.withPerm)
+                    choice="Absent with prior permission";
+                else
+                    choice="Absent without prior permission";
+            }
+        });
+        absentAlert.setView(dialogView).setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                entity1.setAttendance(choice);
                 DatabaseReference myreference= FirebaseDatabase.getInstance().getReference("PARADE/"+date+yoj);
                 String id=myreference.push().getKey();
                 myreference.child(id).setValue(entity1);
                 Log.d("AttendanceAdapter","Value Inserted into db");
             }
-        });
-
+        }).show();
+        return choice;
     }
+
     @Override
     public int getItemCount() {
         return attendanceEntities.size();
