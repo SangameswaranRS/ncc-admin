@@ -56,12 +56,12 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\alert_absent_cadet.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grant_revoke_permission_fragment.xml",
-        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\grant_revoke_permission_fragment.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grant_revoke_permission_fragment.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\grant_revoke_permission_fragment.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register_cadet_layout_1.xml",
@@ -96,12 +96,12 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\unauth_fragment.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_template_big_media_narrow.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\3e6f2585bcf8d3f0d30741b12de854abdb928a33\\output\\res\\layout\\amu_webview.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
@@ -136,12 +136,12 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\nav_header_main.xml"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_expanded_controller_activity.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\layout\\cast_expanded_controller_activity.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_full_report_attendance_activity.xml",
@@ -210,6 +210,10 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\assign_task_fragment.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\assign_task_fragment.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_mini_controller.xml",

@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.example.sangameswaran.nccarmy.Entities.AttendanceReportEntity;
 import com.example.sangameswaran.nccarmy.Entities.ParadeDeclarationEntity;
+import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.AssignTaskFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ChatFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.CreateNewAdminFragment;
 import com.example.sangameswaran.nccarmy.Entities.AdminEntity;
@@ -529,7 +530,7 @@ public class MainActivity extends AppCompatActivity
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
             }
         }else if (id==R.id.chat){
-            ChatFragment fragment=new ChatFragment();
+            AssignTaskFragment fragment=new AssignTaskFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

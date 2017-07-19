@@ -60,9 +60,9 @@
                     android:checkable="true"/>
             </menu>
         </item>
-        <item android:title="Communication">
+        <item android:title="Task Management">
             <menu>
-                <item android:title="Share your ideas"
+                <item android:title="Assign task"
                     android:id="@+id/chat"
                     android:icon="@drawable/send_icon"
                     android:checkable="true"/>
