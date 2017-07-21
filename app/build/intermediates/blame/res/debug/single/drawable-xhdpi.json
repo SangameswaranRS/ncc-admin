@@ -24,12 +24,24 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\plus_icon.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\call_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\call_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\call_icon_redef.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\call_icon_redef.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_nav_drawer.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\ic_nav_drawer.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\attendance_icon_drawable_left.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\attendance_icon_drawable_left.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\message_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\message_icon.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\count_icon.png",

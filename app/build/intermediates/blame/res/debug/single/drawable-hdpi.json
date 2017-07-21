@@ -8,6 +8,10 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\count_icon.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\message_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\message_icon.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\attendance_icon_drawable_left.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\attendance_icon_drawable_left.png"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\plus_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\plus_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\call_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\call_icon.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\plus.png",
@@ -46,5 +54,9 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\nav_header_image_holo_dark.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\nav_header_image_holo_dark.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\call_icon_redef.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-hdpi\\call_icon_redef.png"
     }
 ]

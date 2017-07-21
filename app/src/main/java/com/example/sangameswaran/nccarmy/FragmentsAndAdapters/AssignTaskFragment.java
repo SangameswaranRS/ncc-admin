@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,10 +67,19 @@ public class AssignTaskFragment extends Fragment {
         progressPanel.setVisibility(View.VISIBLE);
         btnAssignTask.setVisibility(View.GONE);
         final Calendar calendar=Calendar.getInstance();
-        assignedTimestampDetail.setText("Assigned at : "+calendar.get(Calendar.DATE)+"/"+calendar.get(Calendar.MONTH)+"/"+calendar.get(Calendar.YEAR)+" TIME : "+calendar.get(Calendar.HOUR)+":"+calendar.get(Calendar.MINUTE));
+        assignedTimestampDetail.setText("Assigned at : "+calendar.get(Calendar.DATE)+"/"+calendar.get(Calendar.MONTH)+"/"+calendar.get(Calendar.YEAR)+" TIME : "+calendar.get(Calendar.HOUR_OF_DAY)+"hours and"+calendar.get(Calendar.MINUTE)+"minutes");
         btnAssignTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(requirement.getText().toString().equals("")||deadline.getText().toString().equals("")||percentageOfCompletion.getText().toString().equals("")){
+                    if(requirement.getText().toString().equals("")){
+                        requirement.setError("Requirement field cannot be empty");
+                    }else if(deadline.getText().toString().equals("")){
+                        deadline.setError("Deadline required");
+                    }else if(percentageOfCompletion.getText().toString().equals("")){
+                        percentageOfCompletion.setError("Percentage of completion required");
+                    }
+                }else {
                 progressPanel.setVisibility(View.VISIBLE);
                 btnAssignTask.setVisibility(View.GONE);
                 taskEntity.setAssigned_timestamp(calendar.get(Calendar.DATE)+"/"+calendar.get(Calendar.MONTH)+"/"+calendar.get(Calendar.YEAR)+" TIME : "+calendar.get(Calendar.HOUR)+":"+calendar.get(Calendar.MINUTE));
@@ -109,9 +119,15 @@ public class AssignTaskFragment extends Fragment {
                                     DatabaseReference pushRef=FirebaseDatabase.getInstance().getReference("AssignedTasks");
                                     String key=pushRef.push().getKey();
                                     pushRef.child(key).setValue(taskEntity);
-                                    Toast.makeText(getActivity(),"Task Assigned",Toast.LENGTH_LONG).show();
-                                    AssignTaskFragment fragment=new AssignTaskFragment();
-                                    getFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+                                    SmsManager sms=SmsManager.getDefault();
+                                    try {
+                                        sms.sendTextMessage(taskEntity.getContact_number(), null, "TASK ASSIGNED BY " + taskEntity.getAssigning_user() + " TASK REQUIREMENT" + taskEntity.getTask_requirement() + " DEADLINE :" + taskEntity.getDeadline(), null, null);
+                                        Toast.makeText(getActivity(), "Task Assigned", Toast.LENGTH_LONG).show();
+                                        AssignTaskFragment fragment = new AssignTaskFragment();
+                                        getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+                                    }catch (Exception e){
+                                        Toast.makeText(getActivity(),"Encountered Exception : "+e.getMessage(),Toast.LENGTH_LONG).show();
+                                    }
                                 }else {
                                     Toast.makeText(getActivity(),"Unable to find contact number,Try again",Toast.LENGTH_LONG).show();
                                     progressPanel.setVisibility(View.GONE);
@@ -129,6 +145,7 @@ public class AssignTaskFragment extends Fragment {
                     });
                 }catch (Exception e){
                     Toast.makeText(getActivity(),"Cast Exception",Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });

@@ -3,125 +3,196 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardElevation="10dp"
-    app:cardCornerRadius="5dp"
-    android:layout_margin="10dp"
-    >
+    app:cardElevation="25dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="15dp">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/colorPrimaryDark"></LinearLayout>
+        android:layout_height="3dp"
+        android:background="@color/colorAccent">
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/tv1"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="15dp"/>
-
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="15dp"/>
+            android:textSize="15dp"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/tv3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv3"/>
+            android:layout_height="wrap_content" />
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv4"/>
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/tv5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv5"/>
+            android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/tv6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv6"/>
+            android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/tv7"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv7"/>
+            android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/tv8"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv8"/>
+            android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/tv9"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv9"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv10"/>
+            android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/tv10"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv11"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv12"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv13"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv14"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv15"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv16"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv17"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv18"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv19"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv20"/>
+            android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/tv11"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv21"/>
+            android:layout_height="wrap_content" />
+
         <TextView
+            android:id="@+id/tv12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tv22"/>
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#cc000000"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:paddingTop="10dp"
+                android:src="@drawable/message_icon" />
+
+            <TextView
+                android:id="@+id/messageCadetTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="16dp"
+                android:text="MESSAGE"
+                android:textColor="#E4E52A"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#cc000000" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:layout_weight="0.15"
+                android:src="@drawable/call_icon" />
+            <TextView
+                android:id="@+id/callCadetTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:capitalize="characters"
+                android:clickable="true"
+                android:text="CALL CADET"
+                android:paddingBottom="5dp"
+                android:paddingTop="16dp"
+                android:textColor="#64a844"
+                android:textSize="10dp" />
+        </LinearLayout>
     </LinearLayout>
-
 
 
 </android.support.v7.widget.CardView>

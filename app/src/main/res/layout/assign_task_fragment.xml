@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:background="#ffff"
     android:paddingRight="10dp"
-    android:paddingLeft="10dp"
-    android:paddingBottom="10dp">
+    android:paddingLeft="10dp">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -66,7 +65,8 @@
             <com.wrapp.floatlabelededittext.FloatLabeledEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp">
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffff"
-        android:visibility="visible"
+        android:visibility="gone"
         android:id="@+id/progressPanel">
         <ProgressBar
             android:layout_width="match_parent"

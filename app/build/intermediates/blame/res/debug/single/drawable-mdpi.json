@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\message_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\message_icon.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\send_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\send_icon.png"
     },
@@ -24,6 +28,10 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\ic_action_name.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\call_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\call_icon.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\add_ic.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\add_ic.png"
     },
@@ -46,6 +54,10 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\plus_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\plus_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\call_icon_redef.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\call_icon_redef.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\parade_icon.png",

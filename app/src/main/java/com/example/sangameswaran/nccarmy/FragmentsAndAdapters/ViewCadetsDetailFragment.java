@@ -55,7 +55,7 @@ public class ViewCadetsDetailFragment extends Fragment {
                     {
                         entity=dsp.getValue(CadetEntity.class);
                         arrayList.add(entity);
-                        adapter=new ViewCadetsRecyclerViewAdapter(arrayList);
+                        adapter=new ViewCadetsRecyclerViewAdapter(arrayList,getActivity());
                         recyclerView.setAdapter(adapter);
                         recyclerView.setLayoutManager(manager);
                         adapter.notifyDataSetChanged();
@@ -74,7 +74,7 @@ public class ViewCadetsDetailFragment extends Fragment {
             }
         });
 
-        adapter=new ViewCadetsRecyclerViewAdapter(arrayList);
+        adapter=new ViewCadetsRecyclerViewAdapter(arrayList,getActivity());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(manager);
         adapter.notifyDataSetChanged();
