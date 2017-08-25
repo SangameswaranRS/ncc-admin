@@ -6,6 +6,7 @@
             android:title="Dashboard"
             android:id="@+id/dashboard"
             android:checkable="true"
+            android:checked="true"
             android:icon="@drawable/dashboard_icon"/>
         <item android:title="Registration and Access Handling">
             <menu>
@@ -64,8 +65,18 @@
             <menu>
                 <item android:title="Assign task"
                     android:id="@+id/chat"
-                    android:icon="@drawable/send_icon"
+                    android:icon="@drawable/assign_task_icon"
                     android:checkable="true"/>
+                <item android:title="View all tasks"
+                    android:id="@+id/viewAllTaskHamburger"
+                    android:icon="@drawable/view_all_task_icon"
+                    android:checkable="true"
+                    />
+                <item android:title="View my tasks"
+                    android:id="@+id/viewMyTaskHamburger"
+                    android:icon="@drawable/view_my_task_icon"
+                    android:checkable="true"
+                    />
             </menu>
         </item>
 

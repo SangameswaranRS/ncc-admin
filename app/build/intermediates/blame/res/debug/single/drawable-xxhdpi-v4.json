@@ -60,12 +60,12 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_white_24.png"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_04_light.png",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_04_light.png"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_tv_light.png",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_tv_light.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_04_light.png",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_04_light.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
@@ -76,12 +76,12 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_replay_10_white_24.png",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_10_white_24.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
@@ -156,12 +156,12 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_20_light.png"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_refresh_white_24.png",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_refresh_white_24.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
@@ -236,16 +236,16 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_grey600_36.png"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_12_light.png",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_12_light.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_grey600.png",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_grey600.png"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_12_light.png",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_12_light.png"
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\e66765ae4a5fad61d98be215e6a3e67d22f5e507\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_16_dark.png",
@@ -296,12 +296,12 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_15_dark.png"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_05_light.png",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_05_light.png"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\29dd97189881d9f269789bce91ce25d21f72ead3\\output\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_05_light.png",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_05_light.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_07_dark.png",
@@ -312,12 +312,12 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_cast_grey.png"
     },
     {
-        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_15_light.png",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_15_light.png"
-    },
-    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_12_light.png",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_12_light.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_15_light.png",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\cc029ef97fbe95a4c31f12e275b816fc144ecb15\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_15_light.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png",

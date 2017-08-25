@@ -40,6 +40,10 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\bgd.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\view_all_task_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\view_all_task_icon.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\nav_header_image_holo_dark.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\nav_header_image_holo_dark.png"
     },
@@ -52,8 +56,16 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\count_icon.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\view_my_task_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\view_my_task_icon.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\plus_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\plus_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\task_management_dashboard.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\task_management_dashboard.png"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\call_icon_redef.png",
@@ -66,5 +78,9 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\time_icon.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\time_icon.png"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\assign_task_icon.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-mdpi\\assign_task_icon.png"
     }
 ]

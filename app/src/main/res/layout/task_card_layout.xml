@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="25dp"
+    app:contentPadding="0dp"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ff0000">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPLETED"
+                android:id="@+id/overallStatTv"
+                android:textColor="#64a844"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:paddingTop="5dp"
+                android:paddingLeft="0dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAssigningUser"
+                android:text="Assigning User : SangaKrish"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/overallStatTv"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAssignedUser"
+                android:text="Assigned User : gokulk"
+                android:layout_below="@+id/tvAssigningUser"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAssignedAt"
+                android:text="Server date"
+                android:layout_below="@+id/tvAssignedUser"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskRequirement"
+                android:text="Overall Requirement here"
+                android:layout_below="@+id/tvAssignedAt"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDeadline"
+                android:text="Deadline: Today"
+                android:layout_below="@+id/taskRequirement"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Update"
+                    android:id="@+id/updatePercentBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:textSize="10dp"/>
+                <com.github.lzyzsd.circleprogress.CircleProgress
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/cpStatusProgress"
+                    app:circle_progress="45"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#cc000000">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/callLL"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call_icon"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="match_parent"
+                android:text="CALL CADET"
+                android:paddingTop="7dp"
+                android:textColor="#64a844" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

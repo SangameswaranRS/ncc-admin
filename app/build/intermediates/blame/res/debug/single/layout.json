@@ -32,6 +32,10 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\update_percent_alert.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\update_percent_alert.xml"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\notification_template_part_time.xml"
     },
@@ -54,6 +58,10 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_absent_cadet.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\alert_absent_cadet.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_my_tasks_fragment.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_my_tasks_fragment.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
@@ -276,6 +284,10 @@
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\task_card_layout.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\task_card_layout.xml"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_card_static.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\chat_card_static.xml"
     },
@@ -382,6 +394,10 @@
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
         "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\db57ed12ec06b35206038096afe40a66982f1985\\output\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_all_tasks_fragment.xml",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\layout\\view_all_tasks_fragment.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_parade_overall_report.xml",

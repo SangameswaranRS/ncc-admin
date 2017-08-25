@@ -36,6 +36,10 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\ic_nav_drawer.png"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\task_management_dashboard.png",
+        "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\task_management_dashboard.png"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\attendance_icon_drawable_left.png",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-xhdpi\\attendance_icon_drawable_left.png"
     },

@@ -17,6 +17,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sangameswaran.nccarmy.Activities.MainActivity;
 import com.example.sangameswaran.nccarmy.Entities.AdminEntity;
 import com.example.sangameswaran.nccarmy.Entities.AssignTaskEntity;
 import com.example.sangameswaran.nccarmy.Entities.CadetEntity;
@@ -55,6 +56,7 @@ public class AssignTaskFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.assign_task_fragment,container,false);
         admins=new ArrayList<>();
+        getActivity().setTitle("View All Tasks");
         assigningUser=(Spinner)v.findViewById(R.id.taskOwnerSpinner);
         getActivity().setTitle("Assign Task");
         progressPanel=(RelativeLayout)v.findViewById(R.id.progressPanel);
@@ -71,18 +73,24 @@ public class AssignTaskFragment extends Fragment {
         btnAssignTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(requirement.getText().toString().equals("")||deadline.getText().toString().equals("")||percentageOfCompletion.getText().toString().equals("")){
+                int perVal=101;
+                try {
+                     perVal = Integer.parseInt(percentageOfCompletion.getText().toString());
+                }catch (Exception e){
+
+                }
+                if(requirement.getText().toString().equals("")||deadline.getText().toString().equals("")||percentageOfCompletion.getText().toString().equals("")||(!(MainActivity.percentValidation(perVal)))){
                     if(requirement.getText().toString().equals("")){
                         requirement.setError("Requirement field cannot be empty");
                     }else if(deadline.getText().toString().equals("")){
                         deadline.setError("Deadline required");
-                    }else if(percentageOfCompletion.getText().toString().equals("")){
-                        percentageOfCompletion.setError("Percentage of completion required");
+                    }else if(percentageOfCompletion.getText().toString().equals("")|| ! MainActivity.percentValidation(Integer.parseInt(percentageOfCompletion.getText().toString()))){
+                        percentageOfCompletion.setError("Invalid Percentage");
                     }
                 }else {
                 progressPanel.setVisibility(View.VISIBLE);
                 btnAssignTask.setVisibility(View.GONE);
-                taskEntity.setAssigned_timestamp(calendar.get(Calendar.DATE)+"/"+calendar.get(Calendar.MONTH)+"/"+calendar.get(Calendar.YEAR)+" TIME : "+calendar.get(Calendar.HOUR)+":"+calendar.get(Calendar.MINUTE));
+                taskEntity.setAssigned_timestamp(calendar.get(Calendar.DATE)+"/"+calendar.get(Calendar.MONTH)+"/"+calendar.get(Calendar.YEAR)+" TIME : "+calendar.get(Calendar.HOUR_OF_DAY)+"hours and"+calendar.get(Calendar.MINUTE)+"minutes");
                 taskEntity.setAssigning_user(String.valueOf(assigningUser.getSelectedItem()));
                 taskEntity.setAssigned_user(String.valueOf(assignedUser.getSelectedItem()));
                 taskEntity.setTask_requirement(requirement.getText().toString());
@@ -121,7 +129,7 @@ public class AssignTaskFragment extends Fragment {
                                     pushRef.child(key).setValue(taskEntity);
                                     SmsManager sms=SmsManager.getDefault();
                                     try {
-                                        sms.sendTextMessage(taskEntity.getContact_number(), null, "TASK ASSIGNED BY " + taskEntity.getAssigning_user() + " TASK REQUIREMENT" + taskEntity.getTask_requirement() + " DEADLINE :" + taskEntity.getDeadline(), null, null);
+                                        sms.sendTextMessage(taskEntity.getContact_number(), null, "TASK ASSIGNED BY: " + taskEntity.getAssigning_user() + " TASK: " + taskEntity.getTask_requirement() + " DEADLINE:" + taskEntity.getDeadline(), null, null);
                                         Toast.makeText(getActivity(), "Task Assigned", Toast.LENGTH_LONG).show();
                                         AssignTaskFragment fragment = new AssignTaskFragment();
                                         getFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();

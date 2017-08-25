@@ -23,6 +23,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.example.sangameswaran.nccarmy.Entities.AssignTaskEntity;
 import com.example.sangameswaran.nccarmy.Entities.AttendanceReportEntity;
 import com.example.sangameswaran.nccarmy.Entities.ParadeDeclarationEntity;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.AssignTaskFragment;
@@ -34,11 +35,14 @@ import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.GrantRevokePermiss
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.MarkAttendanceFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ParadeTaskReportFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.UnAuthFragment;
+import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewAllTasksFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewCadetsDetailFragment;
+import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewMyTaskFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewParadeOverallReportFragment;
 import com.example.sangameswaran.nccarmy.R;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.RegisterCadetFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewPermissionChangesFragment;
+import com.github.lzyzsd.circleprogress.ArcProgress;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.AxisBase;
@@ -90,12 +94,15 @@ public class MainActivity extends AppCompatActivity
     TextView dateEdit,timeEdit;
     RelativeLayout viewRl,EditRl;
     GoogleMap map;
+    ArcProgress pendingArcProgress,completedArcProgress;
     View headerView;
     private Button toggler;
+    List<AssignTaskEntity> assignedTasks;
     TextView navHeaderUserName,navHeaderAccessLevel;
     private boolean alteringParade=false;
     double lat=0.0;
     double lon=0.0;
+    TextView assignNewTaskDb,viewAllTaskDb;
     boolean markedLocation=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +110,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        assignedTasks=new ArrayList<>();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -113,7 +121,7 @@ public class MainActivity extends AppCompatActivity
         tvdbDateTextView=(TextView)findViewById(R.id.tvdbDate);
         tvdbTimeTextView=(TextView)findViewById(R.id.tvdbTime);
         dbtvSpecialInstructions=(TextView)findViewById(R.id.dbtvSpecialInstructions);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         headerView=navigationView.getHeaderView(0);
         toggler=(Button)findViewById(R.id.btnAlterParade);
         viewRl=(RelativeLayout)findViewById(R.id.viewRl);
@@ -121,7 +129,11 @@ public class MainActivity extends AppCompatActivity
         dcEdit =(EditText)findViewById(R.id.dcEdit);
         dateEdit=(TextView)findViewById(R.id.dateEdit);
         timeEdit=(TextView)findViewById(R.id.timeEdit);
+        pendingArcProgress=(ArcProgress)findViewById(R.id.pendingArcProgress);
+        completedArcProgress=(ArcProgress)findViewById(R.id.completedArcProgress);
         SpecialInstructionsEdit =(EditText)findViewById(R.id.specialInstructionsEdit);
+        assignNewTaskDb=(TextView)findViewById(R.id.assignNewTaskDb);
+        viewAllTaskDb=(TextView)findViewById(R.id.viewAllTaskDb);
         toggler.setText("Alter");
         navigationView.setNavigationItemSelectedListener(this);
         Gson gs=new Gson();
@@ -155,6 +167,59 @@ public class MainActivity extends AppCompatActivity
         dbtvParadeName=(TextView)findViewById(R.id.dbtvParadeName);
         dbtvTotalHC=(TextView)findViewById(R.id.dbtvTotalCount);
         overallAttendanceChart=(BarChart)findViewById(R.id.overallAttendanceChart);
+        viewAllTaskDb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ViewAllTasksFragment fragment=new ViewAllTasksFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
+        });
+        assignNewTaskDb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AssignTaskFragment fragment=new AssignTaskFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
+        });
+        DatabaseReference getAllTasks=FirebaseDatabase.getInstance().getReference("AssignedTasks");
+        getAllTasks.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.hasChildren()) {
+                    for (DataSnapshot iterator : dataSnapshot.getChildren()) {
+                        try{
+                            assignedTasks.add(iterator.getValue(AssignTaskEntity.class));
+                        }catch (Exception e){
+                            Toast.makeText(getApplicationContext(),"Exception in parsing",Toast.LENGTH_LONG).show();
+                            completedArcProgress.setProgress(0);
+                            pendingArcProgress.setProgress(0);
+                        }
+                    }
+                    int completedCount=0,pendingCount=0;
+                    for(AssignTaskEntity entity:assignedTasks){
+                        if(entity.getStatus().equals("100")){
+                            completedCount++;
+                        }
+                        else
+                            pendingCount++;
+                    }
+                    int completedCountInPercent=(completedCount*100/(completedCount+pendingCount));
+                    int pendingCountInPercent=(pendingCount*100/(completedCount+pendingCount));
+                    completedArcProgress.setProgress(completedCountInPercent+1);
+                    pendingArcProgress.setProgress(pendingCountInPercent);
+                }
+                else {
+                    completedArcProgress.setProgress(0);
+                    pendingArcProgress.setProgress(0);
+                    Toast.makeText(getApplicationContext(),"No Assigned Tasks found",Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         final String[] allDates=new String[1000];
@@ -532,6 +597,12 @@ public class MainActivity extends AppCompatActivity
         }else if (id==R.id.chat){
             AssignTaskFragment fragment=new AssignTaskFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+        }else if(id==R.id.viewAllTaskHamburger){
+            ViewAllTasksFragment fragment=new ViewAllTasksFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+        }else if(id==R.id.viewMyTaskHamburger){
+            ViewMyTaskFragment fragment=new ViewMyTaskFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -615,5 +686,8 @@ public class MainActivity extends AppCompatActivity
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(place, ZoomLevel-1));
             map.animateCamera(CameraUpdateFactory.zoomTo(ZoomLevel), 2000, null);
         }
+    }
+    public static boolean percentValidation(int percent){
+       return percent>=0&&percent<=100;
     }
 }
