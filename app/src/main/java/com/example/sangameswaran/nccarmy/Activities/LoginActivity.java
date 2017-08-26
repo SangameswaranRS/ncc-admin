@@ -42,6 +42,13 @@ public class LoginActivity extends AppCompatActivity{
         loaderMessage=(TextView)findViewById(R.id.tvLoginLoaderMessage);
         etLoginPassword=(EditText)findViewById(R.id.etLoginPassword);
         tvLoginButton=(TextView)findViewById(R.id.tvLoginButton);
+        SharedPreferences sp=getSharedPreferences("LoginCredentials",MODE_PRIVATE);
+        String userName=sp.getString("MyloginID","NA");
+        String password=sp.getString("password","NA");
+        if(userName.equals("NA")||password.equals("NA")){}
+        else {
+            loginAction(userName,password);
+        }
         tvLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,6 +86,7 @@ public class LoginActivity extends AppCompatActivity{
                                             SharedPreferences sp=getSharedPreferences("LoginCredentials",MODE_PRIVATE);
                                             SharedPreferences.Editor editor=sp.edit();
                                             editor.putString("MyloginID",adminLogin.getUser_name());
+                                            editor.putString("password",adminLogin.getPassword());
                                             editor.commit();
                                             SharedPreferences w=getSharedPreferences("userDetails",MODE_PRIVATE);
                                             SharedPreferences.Editor editor1=w.edit();
@@ -142,6 +150,93 @@ public class LoginActivity extends AppCompatActivity{
 
     }
 
+    private void loginAction(String userName,String passwor) {
+        //Toast.makeText(getApplicationContext(),"Logging you in..",Toast.LENGTH_LONG).show();
+        ContainerLL.setVisibility(View.GONE);
+        progressLL.setVisibility(View.VISIBLE);
+        tvLoginButton.setVisibility(View.GONE);
+        loaderMessage.setText("Checking your credentials..");
+        final String username=userName;
+        final String password=passwor;
+        DatabaseReference mdatabase= FirebaseDatabase.getInstance().getReference("Admins/"+username);
+        mdatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.hasChildren())
+                {
+
+                    Log.d("tag","Admins/"+username);
+                    Log.d("Tag",""+dataSnapshot.toString());
+                    AdminEntity adminLogin=new AdminEntity();
+                    adminLogin=dataSnapshot.getValue(AdminEntity.class);
+                    if(password.equals(adminLogin.getPassword()))
+                    {
+                        if(adminLogin.getLogin_flag().equals("0"))
+                        {
+                            if(adminLogin.getBlocked_status().equals("0")) {
+                                Toast.makeText(getApplicationContext(), "Authorization Success", Toast.LENGTH_LONG).show();
+                                SharedPreferences sp=getSharedPreferences("LoginCredentials",MODE_PRIVATE);
+                                SharedPreferences.Editor editor=sp.edit();
+                                editor.putString("MyloginID",adminLogin.getUser_name());
+                                editor.putString("password",adminLogin.getPassword());
+                                editor.commit();
+                                SharedPreferences w=getSharedPreferences("userDetails",MODE_PRIVATE);
+                                SharedPreferences.Editor editor1=w.edit();
+                                try {
+                                    Gson gson=new Gson();
+                                    String json=gson.toJson(adminLogin,AdminEntity.class);
+                                    editor1.putString("user",json);
+                                    editor1.commit();
+                                }catch (Exception e){
+                                    Toast.makeText(getApplicationContext(),"Server Error",Toast.LENGTH_LONG).show();
+                                    finish();
+                                }
+                                createSession(adminLogin.getUser_name(),adminLogin);
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                startActivity(intent);
+                            }
+                            else
+                            {
+                                progressLL.setVisibility(View.GONE);
+                                Toast.makeText(getApplicationContext(),"You are blocked,Sorry",Toast.LENGTH_LONG).show();
+                            }
+                        }
+                        else
+                        {
+                            if(adminLogin.getBlocked_status().equals("0")) {
+                                loaderMessage.setText("Retreiving your last settings...");
+                                checkSession(adminLogin.getUser_name(),adminLogin);
+                            }else {
+                                progressLL.setVisibility(View.GONE);
+                                Toast.makeText(getApplicationContext(),"You are blocked,Sorry",Toast.LENGTH_LONG).show();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        ContainerLL.setVisibility(View.VISIBLE);
+                        progressLL.setVisibility(View.GONE);
+                        tvLoginButton.setVisibility(View.VISIBLE);
+                        Toast.makeText(getApplicationContext(),"Wrong password for "+username,Toast.LENGTH_LONG).show();
+                    }
+                }
+                else
+                {
+                    ContainerLL.setVisibility(View.VISIBLE);
+                    progressLL.setVisibility(View.GONE);
+                    tvLoginButton.setVisibility(View.VISIBLE);
+                    Toast.makeText(getApplicationContext(),"User name doesnot exist",Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
     private void checkSession(String user_name, final AdminEntity adminLogin) {
         DatabaseReference get=FirebaseDatabase.getInstance().getReference("ACTIVE_SESSION/"+user_name);
         get.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -155,6 +250,7 @@ public class LoginActivity extends AppCompatActivity{
                     SharedPreferences sp=getSharedPreferences("LoginCredentials",MODE_PRIVATE);
                     SharedPreferences.Editor editor=sp.edit();
                     editor.putString("MyloginID",adminLogin.getUser_name());
+                    editor.putString("password",adminLogin.getPassword());
                     editor.commit();
                     SharedPreferences w=getSharedPreferences("userDetails",MODE_PRIVATE);
                     SharedPreferences.Editor editor1=w.edit();

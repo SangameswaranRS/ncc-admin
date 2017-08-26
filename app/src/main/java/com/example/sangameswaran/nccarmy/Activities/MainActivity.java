@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -87,6 +89,7 @@ public class MainActivity extends AppCompatActivity
     RelativeLayout rlDashboard,DashboardLoader;
     BarChart overallAttendanceChart;
     PieChart induividualAttendance;
+    TextView tvRegisteredImei;
     TextView dbtvParadeName,dbtvAttendance,dbtvTotalHC;
     Map<String,Double> coordinateMap=new HashMap<>();
     TextView tvDCTextView,tvdbDateTextView,tvdbTimeTextView,dbtvSpecialInstructions;
@@ -94,6 +97,7 @@ public class MainActivity extends AppCompatActivity
     TextView dateEdit,timeEdit;
     RelativeLayout viewRl,EditRl;
     GoogleMap map;
+    Button signoutBtn;
     ArcProgress pendingArcProgress,completedArcProgress;
     View headerView;
     private Button toggler;
@@ -153,6 +157,8 @@ public class MainActivity extends AppCompatActivity
         }
         navHeaderUserName=(TextView)headerView.findViewById(R.id.nav_header_user_name);
         navHeaderAccessLevel=(TextView)headerView.findViewById(R.id.nav_header_access_level);
+        signoutBtn=(Button)headerView.findViewById(R.id.signoutBtn);
+        tvRegisteredImei=(TextView)headerView.findViewById(R.id.tvRegisteredImei);
         navHeaderUserName.setText(adminEntity.getUser_name());
         if(adminEntity.getIsSuperAdmin().equals("1"))
             navHeaderAccessLevel.setText("Super Admin");
@@ -160,6 +166,15 @@ public class MainActivity extends AppCompatActivity
             navHeaderAccessLevel.setText("Admin");
         else
             navHeaderAccessLevel.setText("Cadet");
+        signoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signOut();
+                finishAffinity();
+            }
+        });
+        TelephonyManager tm= (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
+        tvRegisteredImei.setText("Device IMEI : "+tm.getDeviceId());
         rlDashboard= (RelativeLayout) findViewById(R.id.rlDashboard);
         DashboardLoader=(RelativeLayout)findViewById(R.id.DashboardLoader);
         induividualAttendance=(PieChart)findViewById(R.id.induividualParadeOverView);
@@ -470,8 +485,6 @@ public class MainActivity extends AppCompatActivity
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
-            changeLoginFlag("0");
-            killSession(adminEntity.getUser_name());
             finishAffinity();
 
         } else {
@@ -689,5 +702,16 @@ public class MainActivity extends AppCompatActivity
     }
     public static boolean percentValidation(int percent){
        return percent>=0&&percent<=100;
+    }
+    void signOut()
+    {
+        changeLoginFlag("0");
+        killSession(adminEntity.getUser_name());
+        SharedPreferences sp=getSharedPreferences("LoginCredentials",MODE_PRIVATE);
+        SharedPreferences.Editor editor=sp.edit();
+        editor.putString("MyloginID","NA");
+        editor.putString("password","NA");
+        editor.commit();
+
     }
 }

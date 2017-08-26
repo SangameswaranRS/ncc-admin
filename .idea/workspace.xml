@@ -22,67 +22,31 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62e7d560-cf57-49ba-b6d6-29e978b3a583" name="Default" comment="some GUI Improvements and added Assign Task Fragment&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/task_management_dashboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/assign_task_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/task_management_dashboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/view_all_task_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/view_my_task_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/task_management_dashboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/task_management_dashboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/circleprogress_1_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/TaskAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewAllTasksFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewMyTaskFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/task_card_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/update_percent_alert.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_all_tasks_fragment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_my_tasks_fragment.xml" />
+    <list default="true" id="62e7d560-cf57-49ba-b6d6-29e978b3a583" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/cardview/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/cardview/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/cardview/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/cardview/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/LoginActivity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/LoginActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/LoginActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/LoginActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/LoginActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/MainActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/MainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/ViewFullReportAttendanceActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/Activities/ViewFullReportAttendanceActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/CreateNewAdminFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/CreateNewAdminFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/GrantRevokePermissionFragment$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/GrantRevokePermissionFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/GrantRevokePermissionFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/GrantRevokePermissionFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/MarkAttendanceFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/MarkAttendanceFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/PermissionRecyclerViewAdapter$PermissionRecyclerViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/PermissionRecyclerViewAdapter$PermissionRecyclerViewHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/RegisterCadetFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/RegisterCadetFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/RegisterCadetFragment2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/RegisterCadetFragment2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewCadetsDetailFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewCadetsDetailFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewCadetsRecyclerViewAdapter$ViewCadetsRecyclerViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewCadetsRecyclerViewAdapter$ViewCadetsRecyclerViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewCadetsRecyclerViewAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewCadetsRecyclerViewAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewFullAttendanceReportAdapter$ViewFullAttendancereportRecyclerViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewFullAttendanceReportAdapter$ViewFullAttendancereportRecyclerViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewFullAttendanceReportAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewFullAttendanceReportAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewParadeOverallReportAdapter$ViewParadeOverallReportViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewParadeOverallReportAdapter$ViewParadeOverallReportViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewParadeOverallReportAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewParadeOverallReportAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewParadeOverallReportFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewParadeOverallReportFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewPermissionChangesFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewPermissionChangesFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$bool.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$layout.class" />
@@ -92,8 +56,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/sangameswaran/nccarmy/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/wrapp/floatlabelededittext/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/wrapp/floatlabelededittext/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/wrapp/floatlabelededittext/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/wrapp/floatlabelededittext/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/+cc4563xjNTXMrp5ZNzdjmDonFw=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/zip-cache/+cc4563xjNTXMrp5ZNzdjmDonFw=" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/multi-dex/debug/componentClasses.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/multi-dex/debug/componentClasses.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
@@ -101,43 +63,21 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/cardview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/cardview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/sangameswaran/nccarmy/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/sangameswaran/nccarmy/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/wrapp/floatlabelededittext/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/wrapp/floatlabelededittext/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-v21.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-v21.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/content_main.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/content_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/view_parade_overall_report_card_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/view_parade_overall_report_card_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v21/values-v21.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v21/values-v21.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/nav_header_main.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/nav_header_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/AssignTaskFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/AssignTaskFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_parade_overall_report_card_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_parade_overall_report_card_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
     </list>
     <ignored path="NCCArmy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -195,70 +135,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AttendanceEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Entities/AttendanceEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="29" />
-              <folding>
-                <element signature="e#503#504#0" expanded="false" />
-                <element signature="e#530#531#0" expanded="false" />
-                <element signature="e#570#571#0" expanded="false" />
-                <element signature="e#602#603#0" expanded="false" />
-                <element signature="e#646#647#0" expanded="false" />
-                <element signature="e#686#687#0" expanded="false" />
-                <element signature="e#841#842#0" expanded="false" />
-                <element signature="e#868#869#0" expanded="false" />
-                <element signature="e#908#909#0" expanded="false" />
-                <element signature="e#940#941#0" expanded="false" />
-                <element signature="e#974#975#0" expanded="false" />
-                <element signature="e#1004#1005#0" expanded="false" />
-                <element signature="e#1050#1051#0" expanded="false" />
-                <element signature="e#1088#1089#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AttendanceReportEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Entities/AttendanceReportEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              <folding>
-                <element signature="e#1212#1213#0" expanded="false" />
-                <element signature="e#1256#1257#0" expanded="false" />
-                <element signature="e#1428#1429#0" expanded="false" />
-                <element signature="e#1456#1457#0" expanded="false" />
-                <element signature="e#1498#1499#0" expanded="false" />
-                <element signature="e#1532#1533#0" expanded="false" />
-                <element signature="e#1574#1575#0" expanded="false" />
-                <element signature="e#1614#1615#0" expanded="false" />
-                <element signature="e#1773#1774#0" expanded="false" />
-                <element signature="e#1812#1813#0" expanded="false" />
-                <element signature="e#1872#1873#0" expanded="false" />
-                <element signature="e#1926#1927#0" expanded="false" />
-                <element signature="e#1968#1969#0" expanded="false" />
-                <element signature="e#2008#2009#0" expanded="false" />
-                <element signature="e#2167#2168#0" expanded="false" />
-                <element signature="e#2206#2207#0" expanded="false" />
-                <element signature="e#2266#2267#0" expanded="false" />
-                <element signature="e#2320#2321#0" expanded="false" />
-                <element signature="e#2362#2363#0" expanded="false" />
-                <element signature="e#2402#2403#0" expanded="false" />
-                <element signature="e#2561#2562#0" expanded="false" />
-                <element signature="e#2600#2601#0" expanded="false" />
-                <element signature="e#2660#2661#0" expanded="false" />
-                <element signature="e#2714#2715#0" expanded="false" />
-                <element signature="e#2762#2763#0" expanded="false" />
-                <element signature="e#2806#2807#0" expanded="false" />
-                <element signature="e#2993#2994#0" expanded="false" />
-                <element signature="e#3036#3037#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ParadeEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Entities/ParadeEntity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -278,15 +154,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="690" column="39" selection-start-line="690" selection-start-column="39" selection-end-line="690" selection-end-column="39" />
+            <state relative-caret-position="433">
+              <caret line="712" column="39" selection-start-line="712" selection-start-column="39" selection-end-line="712" selection-end-column="39" />
               <folding>
-                <element signature="class#14663:18693" expanded="false" />
-                <element signature="e#36074#36075#0" expanded="true" />
-                <element signature="e#36120#36121#0" expanded="true" />
+                <element signature="e#8540#8717#0" expanded="true" />
+                <element signature="e#8716#8717#0" expanded="true" />
+                <element signature="class#15329:19359" expanded="false" />
+                <element signature="e#36653#36654#0" expanded="true" />
+                <element signature="e#36699#36700#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav_header_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="253" column="36" selection-start-line="249" selection-start-column="20" selection-end-line="253" selection-end-column="36" />
+              <folding>
+                <element signature="e#2105#8155#0" expanded="true" />
+                <element signature="class#3233:8110" expanded="false" />
+                <element signature="e#8154#8155#0" expanded="true" />
+                <element signature="class#8763:12788" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -295,9 +201,11 @@
       <file leaf-file-name="AssignTaskFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/AssignTaskFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="901">
               <caret line="86" column="88" selection-start-line="86" selection-start-column="88" selection-end-line="86" selection-end-column="88" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -305,7 +213,7 @@
       <file leaf-file-name="ViewMyTaskFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewMyTaskFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
+            <state relative-caret-position="17">
               <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
               <folding />
             </state>
@@ -315,24 +223,23 @@
       <file leaf-file-name="TaskAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/TaskAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="131" column="119" selection-start-line="131" selection-start-column="119" selection-end-line="131" selection-end-column="119" />
+            <state relative-caret-position="374">
+              <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
               <folding>
                 <element signature="docComment;class#TaskAdapter#0" expanded="false" />
-                <element signature="e#4903#6040#0" expanded="true" />
-                <element signature="e#6039#6040#0" expanded="true" />
-                <element signature="e#6070#6257#0" expanded="true" />
-                <element signature="e#6256#6257#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="task_card_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/task_card_layout.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+            <state relative-caret-position="146">
+              <caret line="109" column="73" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -344,8 +251,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="366" column="48" selection-start-line="366" selection-start-column="48" selection-end-line="366" selection-end-column="48" />
+            <state relative-caret-position="204">
+              <caret line="323" column="93" selection-start-line="323" selection-start-column="93" selection-end-line="323" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -356,7 +263,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="e#258#259#0" expanded="false" />
+                <element signature="e#287#288#0" expanded="false" />
+                <element signature="e#331#332#0" expanded="false" />
+                <element signature="e#367#368#0" expanded="false" />
+                <element signature="e#403#404#0" expanded="false" />
+                <element signature="e#435#436#0" expanded="false" />
+                <element signature="e#485#486#0" expanded="false" />
+                <element signature="e#527#528#0" expanded="false" />
+                <element signature="e#564#565#0" expanded="false" />
+                <element signature="e#597#598#0" expanded="false" />
+                <element signature="e#649#650#0" expanded="false" />
+                <element signature="e#693#694#0" expanded="false" />
+                <element signature="e#727#728#0" expanded="false" />
+                <element signature="e#757#758#0" expanded="false" />
+                <element signature="e#803#804#0" expanded="false" />
+                <element signature="e#841#842#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2839,8 +2763,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewPermissionChangesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/alert_cadet_successfully_registered.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ChatFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Entities/MessageEntity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/chat_fragment_layout.xml" />
@@ -2874,10 +2796,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewAllTasksFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Entities/AdminEntity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/AssignTaskFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/TaskAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2912,9 +2836,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
@@ -2991,28 +2912,6 @@
               <option name="myItemId" value="nccarmy" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FragmentsAndAdapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NCCArmy" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nccarmy" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -3048,6 +2947,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3520,15 +3422,22 @@
       <option name="project" value="LOCAL" />
       <updated>1500650625468</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="some GUI Improvements and added Assign Task Fragment&#10;">
+      <created>1503685672239</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1503685672239</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3614,18 +3523,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>71</line>
+          <line>78</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>72</line>
+          <line>79</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java</url>
-          <line>327</line>
+          <line>342</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
@@ -3667,37 +3576,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>150</line>
+          <line>245</line>
           <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>151</line>
+          <line>246</line>
           <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>152</line>
+          <line>247</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>154</line>
+          <line>249</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>155</line>
+          <line>250</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>145</line>
+          <line>240</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
@@ -3961,37 +3870,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>179</line>
+          <line>275</line>
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
-          <line>180</line>
+          <line>276</line>
           <properties />
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java</url>
-          <line>205</line>
+          <line>220</line>
           <properties />
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java</url>
-          <line>206</line>
+          <line>221</line>
           <properties />
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java</url>
-          <line>207</line>
+          <line>222</line>
           <properties />
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java</url>
-          <line>208</line>
+          <line>223</line>
           <properties />
           <option name="timeStamp" value="122" />
         </line-breakpoint>
@@ -4019,19 +3928,78 @@
           <properties />
           <option name="timeStamp" value="126" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>253</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>254</line>
+          <properties />
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>255</line>
+          <properties />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java</url>
+          <line>251</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="127" />
+      <option name="time" value="138" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Entities/MessageEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/chat_fragment_layout.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -4296,17 +4264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/task_card_layout.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_parade_overall_report_card_layout.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -4416,30 +4373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="e#277#278#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#437#438#0" expanded="false" />
-            <element signature="e#464#465#0" expanded="false" />
-            <element signature="e#504#505#0" expanded="false" />
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#567#568#0" expanded="false" />
-            <element signature="e#594#595#0" expanded="false" />
-            <element signature="e#634#635#0" expanded="false" />
-            <element signature="e#666#667#0" expanded="false" />
-            <element signature="e#713#714#0" expanded="false" />
-            <element signature="e#756#757#0" expanded="false" />
-            <element signature="e#927#928#0" expanded="false" />
-            <element signature="e#958#959#0" expanded="false" />
-            <element signature="e#1006#1007#0" expanded="false" />
-            <element signature="e#1046#1047#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1114#1115#0" expanded="false" />
-            <element signature="e#1164#1165#0" expanded="false" />
-            <element signature="e#1206#1207#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4447,22 +4380,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#503#504#0" expanded="false" />
-            <element signature="e#530#531#0" expanded="false" />
-            <element signature="e#570#571#0" expanded="false" />
-            <element signature="e#602#603#0" expanded="false" />
-            <element signature="e#646#647#0" expanded="false" />
-            <element signature="e#686#687#0" expanded="false" />
-            <element signature="e#841#842#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#908#909#0" expanded="false" />
-            <element signature="e#940#941#0" expanded="false" />
-            <element signature="e#974#975#0" expanded="false" />
-            <element signature="e#1004#1005#0" expanded="false" />
-            <element signature="e#1050#1051#0" expanded="false" />
-            <element signature="e#1088#1089#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4520,30 +4438,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="690" column="39" selection-start-line="690" selection-start-column="39" selection-end-line="690" selection-end-column="39" />
-          <folding>
-            <element signature="class#14663:18693" expanded="false" />
-            <element signature="e#36074#36075#0" expanded="true" />
-            <element signature="e#36120#36121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Entities/ParadeTaskReportEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#258#259#0" expanded="false" />
+            <element signature="e#287#288#0" expanded="false" />
+            <element signature="e#331#332#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
+            <element signature="e#403#404#0" expanded="false" />
+            <element signature="e#435#436#0" expanded="false" />
+            <element signature="e#485#486#0" expanded="false" />
+            <element signature="e#527#528#0" expanded="false" />
+            <element signature="e#564#565#0" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#649#650#0" expanded="false" />
+            <element signature="e#693#694#0" expanded="false" />
+            <element signature="e#727#728#0" expanded="false" />
+            <element signature="e#757#758#0" expanded="false" />
+            <element signature="e#803#804#0" expanded="false" />
+            <element signature="e#841#842#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/AssignTaskFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="86" column="88" selection-start-line="86" selection-start-column="88" selection-end-line="86" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/TaskAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
+          <folding>
+            <element signature="docComment;class#TaskAdapter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/task_card_layout.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="109" column="73" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -4553,47 +4507,55 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="366" column="48" selection-start-line="366" selection-start-column="48" selection-end-line="366" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/AssignTaskFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="86" column="88" selection-start-line="86" selection-start-column="88" selection-end-line="86" selection-end-column="88" />
+        <state relative-caret-position="204">
+          <caret line="323" column="93" selection-start-line="323" selection-start-column="93" selection-end-line="323" selection-end-column="93" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/ViewMyTaskFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
+        <state relative-caret-position="17">
           <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/FragmentsAndAdapters/TaskAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="131" column="119" selection-start-line="131" selection-start-column="119" selection-end-line="131" selection-end-column="119" />
+        <state relative-caret-position="146">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="253" column="36" selection-start-line="249" selection-start-column="20" selection-end-line="253" selection-end-column="36" />
           <folding>
-            <element signature="docComment;class#TaskAdapter#0" expanded="false" />
-            <element signature="e#4903#6040#0" expanded="true" />
-            <element signature="e#6039#6040#0" expanded="true" />
-            <element signature="e#6070#6257#0" expanded="true" />
-            <element signature="e#6256#6257#0" expanded="true" />
+            <element signature="e#2105#8155#0" expanded="true" />
+            <element signature="class#3233:8110" expanded="false" />
+            <element signature="e#8154#8155#0" expanded="true" />
+            <element signature="class#8763:12788" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sangameswaran/nccarmy/Activities/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="433">
+          <caret line="712" column="39" selection-start-line="712" selection-start-column="39" selection-end-line="712" selection-end-column="39" />
+          <folding>
+            <element signature="e#8540#8717#0" expanded="true" />
+            <element signature="e#8716#8717#0" expanded="true" />
+            <element signature="class#15329:19359" expanded="false" />
+            <element signature="e#36653#36654#0" expanded="true" />
+            <element signature="e#36699#36700#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
