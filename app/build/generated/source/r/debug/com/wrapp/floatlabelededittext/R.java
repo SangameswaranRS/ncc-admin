@@ -8,16 +8,16 @@ package com.wrapp.floatlabelededittext;
 
 public final class R {
     public static final class attr {
-        public static final int fletBackground = 0x7f01014a;
-        public static final int fletPadding = 0x7f010145;
-        public static final int fletPaddingBottom = 0x7f010149;
-        public static final int fletPaddingLeft = 0x7f010146;
-        public static final int fletPaddingRight = 0x7f010148;
-        public static final int fletPaddingTop = 0x7f010147;
-        public static final int fletTextAppearance = 0x7f010144;
+        public static final int fletBackground = 0x7f01014b;
+        public static final int fletPadding = 0x7f010146;
+        public static final int fletPaddingBottom = 0x7f01014a;
+        public static final int fletPaddingLeft = 0x7f010147;
+        public static final int fletPaddingRight = 0x7f010149;
+        public static final int fletPaddingTop = 0x7f010148;
+        public static final int fletTextAppearance = 0x7f010145;
     }
     public static final class styleable {
-        public static final int[] FloatLabeledEditText = { 0x7f010144, 0x7f010145, 0x7f010146, 0x7f010147, 0x7f010148, 0x7f010149, 0x7f01014a };
+        public static final int[] FloatLabeledEditText = { 0x7f010145, 0x7f010146, 0x7f010147, 0x7f010148, 0x7f010149, 0x7f01014a, 0x7f01014b };
         public static final int FloatLabeledEditText_fletBackground = 6;
         public static final int FloatLabeledEditText_fletPadding = 1;
         public static final int FloatLabeledEditText_fletPaddingBottom = 5;

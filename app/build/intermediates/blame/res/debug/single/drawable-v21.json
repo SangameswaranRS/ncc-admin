@@ -8,6 +8,14 @@
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
     },
     {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\f3bf1f3d14a2fb439e762a75271c13f3a041f8f5\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
         "source": "E:\\NCCArmy\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
     },
@@ -21,7 +29,7 @@
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
@@ -29,10 +37,22 @@
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\f3bf1f3d14a2fb439e762a75271c13f3a041f8f5\\output\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\f3bf1f3d14a2fb439e762a75271c13f3a041f8f5\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\f3bf1f3d14a2fb439e762a75271c13f3a041f8f5\\output\\res\\drawable-v21\\design_password_eye.xml"
     }
 ]

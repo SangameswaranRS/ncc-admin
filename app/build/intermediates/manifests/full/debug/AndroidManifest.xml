@@ -57,6 +57,8 @@
             android:name="com.example.sangameswaran.nccarmy.Activities.ViewFullReportAttendanceActivity"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+
+        <service android:name="com.example.sangameswaran.nccarmy.service.ParadeTimeNotificationService" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -125,6 +127,10 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.Transparent" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

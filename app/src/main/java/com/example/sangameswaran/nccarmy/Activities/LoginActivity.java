@@ -1,10 +1,15 @@
 package com.example.sangameswaran.nccarmy.Activities;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -15,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.sangameswaran.nccarmy.Entities.AdminEntity;
+import com.example.sangameswaran.nccarmy.Manifest;
 import com.example.sangameswaran.nccarmy.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -22,6 +28,16 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.MultiplePermissionsReport;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.DexterError;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.PermissionRequestErrorListener;
+import com.karumi.dexter.listener.multi.DialogOnAnyDeniedMultiplePermissionsListener;
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
+
+import java.util.List;
 
 /**
  * Created by Sangameswaran on 10-05-2017.
@@ -32,10 +48,13 @@ public class LoginActivity extends AppCompatActivity{
     TextView tvLoginButton;
     LinearLayout progressLL,ContainerLL;
     TextView loaderMessage;
+    AlertDialog.Builder permissionChecker;
+    boolean b;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
+        askRequiredPermissionsForApplication();
         progressLL=(LinearLayout)findViewById(R.id.progressLL);
         ContainerLL=(LinearLayout)findViewById(R.id.containerll);
         etLoginUserName=(EditText)findViewById(R.id.etLoginUserName);
@@ -292,4 +311,70 @@ public class LoginActivity extends AppCompatActivity{
         TelephonyManager telephonyManager= (TelephonyManager) this.getSystemService(TELEPHONY_SERVICE);
         sessionApi.child(userName).setValue(telephonyManager.getDeviceId());
     }
+
+    private void askForPermission(String permission, Integer requestCode) {
+        if (ContextCompat.checkSelfPermission(LoginActivity.this, permission) != PackageManager.PERMISSION_GRANTED) {
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(LoginActivity.this, permission)) {
+
+                //This is called if user has denied the permission before
+                //In this case I am just asking the permission again
+                ActivityCompat.requestPermissions(LoginActivity.this, new String[]{permission}, requestCode);
+
+            } else {
+
+                ActivityCompat.requestPermissions(LoginActivity.this, new String[]{permission}, requestCode);
+            }
+        } else {
+            Toast.makeText(this, "" + permission + " is already granted.", Toast.LENGTH_SHORT).show();
+        }
+    }
+    public boolean askRequiredPermissionsForApplication()
+    {
+        Dexter.withActivity(this).withPermissions(android.Manifest.permission.READ_PHONE_STATE,android.Manifest.permission.CALL_PHONE,android.Manifest.permission.SEND_SMS).withListener(new MultiplePermissionsListener() {
+            @Override
+            public void onPermissionsChecked(MultiplePermissionsReport report) {
+                if(report.areAllPermissionsGranted()){
+                    Toast.makeText(getApplicationContext(),"All Permissions Granted",Toast.LENGTH_LONG).show();
+                }
+                else {
+                    permissionChecker=new AlertDialog.Builder(LoginActivity.this);
+                    permissionChecker.setTitle("Permission check Error").setMessage("Enable All permissions to use application").setCancelable(false).setPositiveButton("CLOSE APP", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            LoginActivity.this.finishAffinity();
+                        }
+                    }).show();
+                }
+            }
+
+            @Override
+            public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
+                token.continuePermissionRequest();
+            }
+        }).withErrorListener(new PermissionRequestErrorListener() {
+            @Override
+            public void onError(DexterError error) {
+                Toast.makeText(getApplicationContext(),"DexterError",Toast.LENGTH_LONG).show();
+            }
+        }).onSameThread().check();
+        /*askForPermission(android.Manifest.permission.READ_PHONE_STATE,1);
+        askForPermission(android.Manifest.permission.CALL_PHONE,2);
+        askForPermission(android.Manifest.permission.SEND_SMS,3);
+        if((ContextCompat.checkSelfPermission(LoginActivity.this,android.Manifest.permission.READ_PHONE_STATE)!= PackageManager.PERMISSION_GRANTED)){
+            Toast.makeText(getApplicationContext(),"PermissionRequired For Using this App",Toast.LENGTH_LONG).show();
+            LoginActivity.this.finishAffinity();
+        }
+        if((ContextCompat.checkSelfPermission(LoginActivity.this,android.Manifest.permission.CALL_PHONE)!= PackageManager.PERMISSION_GRANTED)){
+            Toast.makeText(getApplicationContext(),"PermissionRequired For Using this App",Toast.LENGTH_LONG).show();
+            LoginActivity.this.finishAffinity();
+        }
+        if((ContextCompat.checkSelfPermission(LoginActivity.this,android.Manifest.permission.SEND_SMS)!= PackageManager.PERMISSION_GRANTED)){
+            Toast.makeText(getApplicationContext(),"PermissionRequired For Using this App",Toast.LENGTH_LONG).show();
+            LoginActivity.this.finishAffinity();
+        }
+*/
+        return true;
+    }
+
 }

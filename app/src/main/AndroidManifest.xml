@@ -35,6 +35,7 @@
         <activity android:name=".Activities.ViewFullReportAttendanceActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <service android:name=".service.ParadeTimeNotificationService" />
     </application>
 
 </manifest>

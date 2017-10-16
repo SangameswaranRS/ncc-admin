@@ -1,42 +1,46 @@
 [
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\color-v23\\abc_tint_switch_track.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\color-v23\\abc_tint_default.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_tint_default.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\color-v23\\abc_tint_edittext.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\ee163cc56f8337c0bd6fdd13187f4b47414a6a2f\\output\\res\\color-v23\\design_tint_password_toggle.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\f3bf1f3d14a2fb439e762a75271c13f3a041f8f5\\output\\res\\color-v23\\design_tint_password_toggle.xml"
     },
     {
         "merged": "E:\\NCCArmy\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
-        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\b9a39964193401b063a746eaf0e75f0eb389c2d3\\output\\res\\color-v23\\abc_tint_spinner.xml"
+        "source": "C:\\Users\\Sangameswaran\\.android\\build-cache\\fc1c704a4df4ab4ed0913e15feca0c25d84ebdfa\\output\\res\\color-v23\\abc_tint_spinner.xml"
     }
 ]

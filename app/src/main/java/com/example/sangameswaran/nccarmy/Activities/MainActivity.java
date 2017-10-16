@@ -1,10 +1,15 @@
 package com.example.sangameswaran.nccarmy.Activities;
 
 import android.app.DatePickerDialog;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.telephony.TelephonyManager;
@@ -44,6 +49,7 @@ import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewParadeOverallR
 import com.example.sangameswaran.nccarmy.R;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.RegisterCadetFragment;
 import com.example.sangameswaran.nccarmy.FragmentsAndAdapters.ViewPermissionChangesFragment;
+import com.example.sangameswaran.nccarmy.service.ParadeTimeNotificationService;
 import com.github.lzyzsd.circleprogress.ArcProgress;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.PieChart;
@@ -237,6 +243,8 @@ public class MainActivity extends AppCompatActivity
         });
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        Intent serviceIntent=new Intent(this, ParadeTimeNotificationService.class);
+        startService(serviceIntent);
         final String[] allDates=new String[1000];
         DatabaseReference getOverallAttendanceCoordinatesApi= FirebaseDatabase.getInstance().getReference("PARADE_REPORT");
         getOverallAttendanceCoordinatesApi.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -713,5 +721,11 @@ public class MainActivity extends AppCompatActivity
         editor.putString("password","NA");
         editor.commit();
 
+    }
+    public static boolean isNetworkAvailable(Context context) {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) context.getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }
