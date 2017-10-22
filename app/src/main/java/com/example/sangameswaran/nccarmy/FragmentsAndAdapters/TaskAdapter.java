@@ -67,7 +67,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         holder.tvAssignedUser.setText("Assigned User : " + assignTaskEntity.getAssigned_user());
         holder.tvAssignedAt.setText("Assigned at : " + assignTaskEntity.getAssigned_timestamp());
         holder.tvDeadline.setText("Deadline : " + assignTaskEntity.getDeadline());
-        holder.taskRequirement.setText("Tast : "+assignTaskEntity.getTask_requirement());
+        holder.taskRequirement.setText("Task : "+assignTaskEntity.getTask_requirement());
         try {
             int progress = Integer.parseInt(assignTaskEntity.getStatus());
             holder.cpStatusProgress.setProgress(progress);

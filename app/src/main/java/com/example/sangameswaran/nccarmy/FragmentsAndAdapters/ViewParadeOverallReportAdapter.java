@@ -67,17 +67,17 @@ public class ViewParadeOverallReportAdapter extends RecyclerView.Adapter<ViewPar
         }catch (Exception e){
 
         }
-        holder.t1.setText("BATCH/DATE : "+entity.getDate());
-        holder.t2.setText("OVERALL PRESENT COUNT : "+entity.getReport().getOverall_present_count());
-        holder.t3.setText("OVERALL ABSENT COUNT : "+entity.getReport().getOverall_absent_count());
-        holder.t4.setText("OVERALL ATTENDANCE : "+entity.getReport().getPercentage_of_present());
+        holder.t1.setText(entity.getDate());
+        holder.t2.setText("OVERALL PRESENT : "+entity.getReport().getOverall_present_count());
+        holder.t3.setText("OVERALL ABSENT : "+entity.getReport().getOverall_absent_count());
+        holder.t4.setText("ATTENDANCE : "+entity.getReport().getPercentage_of_present());
         holder.t5.setText("BATCH :" +entity.getReport().getBatch());
-        holder.t6.setText("EME PRESENT COUNT :" + entity.getReport().getEMEpresentCount());
-        holder.t7.setText("EME ABSENT COUNT : "+entity.getReport().getEMEAbsentCount());
-        holder.t8.setText("ENGINEERS PRESENT COUNT : "+entity.getReport().getENGpresentCount());
-        holder.t9.setText("ENGINEERS ABSENT COUNT : "+entity.getReport().getENGabsentCount());
-        holder.t10.setText("SIGNALS PRESENT COUNT : "+entity.getReport().getSIGpresentCount());
-        holder.t11.setText("SIGNALS ABSENT COUNT : "+entity.getReport().getSIGabsentCount());
+        holder.t6.setText("EME PRESENT :" + entity.getReport().getEMEpresentCount());
+        holder.t7.setText("EME ABSENT: "+entity.getReport().getEMEAbsentCount());
+        holder.t8.setText("ENGINEERS PRESENT : "+entity.getReport().getENGpresentCount());
+        holder.t9.setText("ENGINEERS ABSENT : "+entity.getReport().getENGabsentCount());
+        holder.t10.setText("SIGNALS PRESENT : "+entity.getReport().getSIGpresentCount());
+        holder.t11.setText("SIGNALS ABSENT : "+entity.getReport().getSIGabsentCount());
         List<PieEntry> entry=new ArrayList<>();
         int emePresent=Integer.parseInt(entity.getReport().getEMEpresentCount());
         int engPresent=Integer.parseInt(entity.getReport().getENGpresentCount());

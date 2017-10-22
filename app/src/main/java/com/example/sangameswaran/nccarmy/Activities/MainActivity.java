@@ -616,11 +616,21 @@ public class MainActivity extends AppCompatActivity
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
             }
         }else if (id==R.id.chat){
-            AssignTaskFragment fragment=new AssignTaskFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            if(adminEntity.getIsSuperAdmin().equals("1")) {
+                AssignTaskFragment fragment = new AssignTaskFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            }else {
+                UnAuthFragment fragment=new UnAuthFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
         }else if(id==R.id.viewAllTaskHamburger){
-            ViewAllTasksFragment fragment=new ViewAllTasksFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            if(adminEntity.getIsSuperAdmin().equals("1")) {
+                ViewAllTasksFragment fragment = new ViewAllTasksFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main, fragment).commit();
+            }else {
+                UnAuthFragment fragment=new UnAuthFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();
+            }
         }else if(id==R.id.viewMyTaskHamburger){
             ViewMyTaskFragment fragment=new ViewMyTaskFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_main,fragment).commit();

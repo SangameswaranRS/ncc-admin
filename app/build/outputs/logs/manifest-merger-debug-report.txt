@@ -162,6 +162,7 @@ ADDED from E:\NCCArmy\app\src\main\AndroidManifest.xml:38:9-74
 		ADDED from E:\NCCArmy\app\src\main\AndroidManifest.xml:38:18-71
 uses-sdk
 INJECTED from E:\NCCArmy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Sangameswaran\.android\build-cache\f4c92eca816d12dff09dc7aa4badb2b4c9a5af8c\output\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:cardview-v7:24.2.1] C:\Users\Sangameswaran\.android\build-cache\d62cdf0dd959e8bbf564e45742b55ebeae3a1854\output\AndroidManifest.xml:20:5-43
 MERGED from [com.wrapp.floatlabelededittext:library:0.0.6] C:\Users\Sangameswaran\.android\build-cache\835d30a4776d1230f1eff92e52bc2233cdc93a36\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Sangameswaran\.android\build-cache\3e6f2585bcf8d3f0d30741b12de854abdb928a33\output\AndroidManifest.xml:5:5-43

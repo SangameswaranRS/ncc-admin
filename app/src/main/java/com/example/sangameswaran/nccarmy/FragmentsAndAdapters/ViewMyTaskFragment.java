@@ -59,7 +59,7 @@ public class ViewMyTaskFragment extends Fragment{
 
         }
         DatabaseReference getAllTaskApi= FirebaseDatabase.getInstance().getReference("AssignedTasks");
-        getAllTaskApi.addValueEventListener(new ValueEventListener() {
+        getAllTaskApi.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.hasChildren()){
